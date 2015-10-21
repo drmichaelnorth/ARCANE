@@ -1,0 +1,2252 @@
+<gov.anl.cue.sdga.engine.matrix.MatrixEngine>
+  <mutationProbabilityForCells>1.0</mutationProbabilityForCells>
+  <killFraction>0.5</killFraction>
+  <crossoverProbability>0.0</crossoverProbability>
+  <populationSize>10</populationSize>
+  <randomSeed>43</randomSeed>
+  <maximumNewTermCount>5</maximumNewTermCount>
+  <additionProbability>0.1</additionProbability>
+  <subtractionProbability>0.1</subtractionProbability>
+  <multiplicationProbability>0.4</multiplicationProbability>
+  <accumulateAddProbability>0.33333</accumulateAddProbability>
+  <accumulateSubtractProbability>0.33333</accumulateSubtractProbability>
+  <inputPopulation serialization="custom">
+    <unserializable-parents/>
+    <list>
+      <default>
+        <size>1</size>
+      </default>
+      <int>1</int>
+      <gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+        <unserializable-parents/>
+        <list>
+          <default>
+            <size>3</size>
+          </default>
+          <int>3</int>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.5</double>
+                  <double>0.5</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5</double>
+                  <double>0.5</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5</double>
+                  <double>0.5</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5</double>
+                  <double>0.5</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>0.5</double>
+                  <double>0.5</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>a + b</string>
+              <string>a + b</string>
+              <string>10.4</string>
+              <string>10.4</string>
+              <string>c</string>
+            </equations>
+            <name>a</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit">
+                <__symbol>kg</__symbol>
+              </__unit>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.5</double>
+                  <double>0.5</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5</double>
+                  <double>0.5</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5</double>
+                  <double>0.5</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5</double>
+                  <double>0.5</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.25</double>
+                  <double>0.25</double>
+                  <double>0.25</double>
+                  <double>0.25</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>9.3</string>
+              <string>9.3</string>
+              <string>a - b</string>
+              <string>a - b</string>
+              <string>c</string>
+            </equations>
+            <name>b</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string></string>
+              <string></string>
+              <string>INTEG(a + b, 39.8)</string>
+              <string>INTEG(a + b, 39.8)</string>
+              <string>c</string>
+            </equations>
+            <name>c</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+        </list>
+        <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+          <default>
+            <equationEvolution>true</equationEvolution>
+            <stepCount>101</stepCount>
+            <fitnessEquations>
+              <string>a + b</string>
+              <string>a + b</string>
+              <string>SIN(a)</string>
+              <string>SIN(a)</string>
+              <string>c</string>
+            </fitnessEquations>
+            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <nodeNames>
+              <string>Converter1</string>
+              <string>Converter2</string>
+              <string>Source1</string>
+              <string>Source2</string>
+              <string>Sink1</string>
+            </nodeNames>
+            <stepSize>0.5</stepSize>
+          </default>
+        </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+    </list>
+  </inputPopulation>
+  <outputPopulation serialization="custom">
+    <unserializable-parents/>
+    <list>
+      <default>
+        <size>10</size>
+      </default>
+      <int>10</int>
+      <gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+        <unserializable-parents/>
+        <list>
+          <default>
+            <size>3</size>
+          </default>
+          <int>3</int>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.906580825076082</double>
+                  <double>0.09341917492391807</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.4635487787819634</double>
+                  <double>0.5364512212180367</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.44277875873437067</double>
+                  <double>0.5572212412656293</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.2999712397632106</double>
+                  <double>0.7000287602367894</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>0.5577882391327789</double>
+                  <double>0.4422117608672211</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((a + b) * ((a - a) / this.zeroFill(a))) + a)</string>
+              <string>((((a + b + (a - a)) - ((a * a) / this.zeroFill(a)))) * (((a / this.zeroFill(a)) * a) / this.zeroFill(a)))</string>
+              <string>(a)</string>
+              <string>((((((10.4) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a))) - a)) * (a / this.zeroFill(a))) + a)</string>
+              <string>(c)</string>
+            </equations>
+            <name>a</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit">
+                <__symbol>kg</__symbol>
+              </__unit>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.08344966535707452</double>
+                  <double>0.9165503346429255</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.647412505537017</double>
+                  <double>0.352587494462983</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.3408367635079904</double>
+                  <double>0.6591632364920096</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.7472648522414241</double>
+                  <double>0.2527351477585758</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.2951619729825681</double>
+                  <double>0.14582792427290836</double>
+                  <double>0.27252991323414444</double>
+                  <double>0.2864801895103791</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>((((9.3) * (a / this.zeroFill(a)))) * (((a / this.zeroFill(a)) * a) / this.zeroFill(a)))</string>
+              <string>(((((9.3) * (a / this.zeroFill(a)))) * (a / this.zeroFill(a))) - ((a / this.zeroFill(a)) * a))</string>
+              <string>(((((a - b) * (a / this.zeroFill(a))) + a)) * (a / this.zeroFill(a)))</string>
+              <string>(((a - b - (((a + a) * a) / this.zeroFill(a))) - a) + a)</string>
+              <string>((((((c / this.zeroFill(c)) * c)) - c) - c) - c)</string>
+            </equations>
+            <name>b</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((((a) - ((a * a) / this.zeroFill(a)))) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a))) - ((a * a) / this.zeroFill(a)))</string>
+              <string>((((a / this.zeroFill(a)) * a)) + ((a * a) / this.zeroFill(a)))</string>
+              <string>INTEG(((((a + b + a)) * (a / this.zeroFill(a))) - a), 39.8)</string>
+              <string>INTEG(((((a + b) * (a / this.zeroFill(a))) - a) + a), 39.8)</string>
+              <string>(((c + c) + c) + c)</string>
+            </equations>
+            <name>c</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+        </list>
+        <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+          <default>
+            <equationEvolution>true</equationEvolution>
+            <stepCount>101</stepCount>
+            <fitnessEquations>
+              <string>a + b</string>
+              <string>a + b</string>
+              <string>SIN(a)</string>
+              <string>SIN(a)</string>
+              <string>c</string>
+            </fitnessEquations>
+            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessValue>9.692622671882013E61</fitnessValue>
+            <nodeNames>
+              <string>Converter1</string>
+              <string>Converter2</string>
+              <string>Source1</string>
+              <string>Source2</string>
+              <string>Sink1</string>
+            </nodeNames>
+            <stepSize>0.5</stepSize>
+          </default>
+        </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      <gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+        <unserializable-parents/>
+        <list>
+          <default>
+            <size>3</size>
+          </default>
+          <int>3</int>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.4639888054017317</double>
+                  <double>0.5360111945982683</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5603898334494921</double>
+                  <double>0.43961016655050794</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.42798863710341734</double>
+                  <double>0.5720113628965826</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.07660845887820096</double>
+                  <double>0.923391541121799</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>0.8294838219589601</double>
+                  <double>0.17051617804103986</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((((a + b) * ((a - a) / this.zeroFill(a))) + a)) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a)))</string>
+              <string>((((a + b + (a - a)) - ((a * a) / this.zeroFill(a)))) * (((a / this.zeroFill(a)) * a) / this.zeroFill(a)))</string>
+              <string>(a)</string>
+              <string>(((((((10.4) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a))) - a)) * (a / this.zeroFill(a))) + a) - (a + a))</string>
+              <string>(c)</string>
+            </equations>
+            <name>a</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit">
+                <__symbol>kg</__symbol>
+              </__unit>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.5675008155255794</double>
+                  <double>0.4324991844744206</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.30015558043879526</double>
+                  <double>0.6998444195612047</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.9185433478961783</double>
+                  <double>0.08145665210382168</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.36984272985410444</double>
+                  <double>0.6301572701458956</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.2630962530854974</double>
+                  <double>0.47316172274243823</double>
+                  <double>0.11602618936342718</double>
+                  <double>0.14771583480863723</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>((a + a))</string>
+              <string>(((((9.3) * (a / this.zeroFill(a)))) * (a / this.zeroFill(a))) - ((a / this.zeroFill(a)) * a))</string>
+              <string>((((((a - b) * (a / this.zeroFill(a))) + a)) * (a / this.zeroFill(a))) + a)</string>
+              <string>(((((a - b - (((a + a) * a) / this.zeroFill(a))) - a) + a)) * (a / this.zeroFill(a)))</string>
+              <string>(((((((c / this.zeroFill(c)) * c)) - c) - c) - c) - c)</string>
+            </equations>
+            <name>b</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((((((a) - ((a * a) / this.zeroFill(a)))) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a))) - ((a * a) / this.zeroFill(a)))) * (((a + a) + a) / this.zeroFill(a)))</string>
+              <string>((((((a / this.zeroFill(a)) * a)) + ((a * a) / this.zeroFill(a)))) * (a / this.zeroFill(a)))</string>
+              <string>INTEG((((((a + b + a)) * (a / this.zeroFill(a))) - a) - a), 39.8)</string>
+              <string>INTEG((((((a + b) * (a / this.zeroFill(a))) - a) + a) + (a + a)), 39.8)</string>
+              <string>(((((c + c) + c) + c)) * (c / this.zeroFill(c)))</string>
+            </equations>
+            <name>c</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+        </list>
+        <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+          <default>
+            <equationEvolution>true</equationEvolution>
+            <stepCount>101</stepCount>
+            <fitnessEquations>
+              <string>a + b</string>
+              <string>a + b</string>
+              <string>SIN(a)</string>
+              <string>SIN(a)</string>
+              <string>c</string>
+            </fitnessEquations>
+            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessValue>3.0252816417301615E61</fitnessValue>
+            <nodeNames>
+              <string>Converter1</string>
+              <string>Converter2</string>
+              <string>Source1</string>
+              <string>Source2</string>
+              <string>Sink1</string>
+            </nodeNames>
+            <stepSize>0.5</stepSize>
+          </default>
+        </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      <gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+        <unserializable-parents/>
+        <list>
+          <default>
+            <size>3</size>
+          </default>
+          <int>3</int>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.5379000457134814</double>
+                  <double>0.4620999542865186</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.2863606125298454</double>
+                  <double>0.7136393874701547</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.1584942350023992</double>
+                  <double>0.8415057649976008</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.3633589056268491</double>
+                  <double>0.6366410943731509</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>0.8708866426834878</double>
+                  <double>0.12911335731651216</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((((a + b) * ((a - a) / this.zeroFill(a))) + a)) * (a / this.zeroFill(a)))</string>
+              <string>((a + b + (a - a)) - ((a * a) / this.zeroFill(a)))</string>
+              <string>(a)</string>
+              <string>((a - a))</string>
+              <string>((((((c + c)) * (((c / this.zeroFill(c)) * c) / this.zeroFill(c))) + c)) * (c / this.zeroFill(c)))</string>
+            </equations>
+            <name>a</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit">
+                <__symbol>kg</__symbol>
+              </__unit>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.6386877584715268</double>
+                  <double>0.36131224152847324</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.05373897602146691</double>
+                  <double>0.9462610239785331</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.9480305150382934</double>
+                  <double>0.05196948496170657</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.846409498374113</double>
+                  <double>0.1535905016258871</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.20852225697696222</double>
+                  <double>0.4748433056757908</double>
+                  <double>0.1881404069947671</double>
+                  <double>0.12849403035247975</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>((9.3) * (a / this.zeroFill(a)))</string>
+              <string>((((9.3) * (a / this.zeroFill(a)))) * (a / this.zeroFill(a)))</string>
+              <string>((((a - a) / this.zeroFill(a)) * a))</string>
+              <string>((a - b - (((a + a) * a) / this.zeroFill(a))) - a)</string>
+              <string>(((c * c) / this.zeroFill(c)))</string>
+            </equations>
+            <name>b</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>((((((a) - ((a * a) / this.zeroFill(a)))) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a)))) * (a / this.zeroFill(a)))</string>
+              <string>(((((a / this.zeroFill(a)) * a))) * ((a + a) / this.zeroFill(a)))</string>
+              <string>INTEG(((((a + b + a)) * (a / this.zeroFill(a))) - a), 39.8)</string>
+              <string>INTEG((((((a + b) * (a / this.zeroFill(a))) - a)) * (a / this.zeroFill(a))), 39.8)</string>
+              <string>((c + c) + c)</string>
+            </equations>
+            <name>c</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+        </list>
+        <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+          <default>
+            <equationEvolution>true</equationEvolution>
+            <stepCount>101</stepCount>
+            <fitnessEquations>
+              <string>a + b</string>
+              <string>a + b</string>
+              <string>SIN(a)</string>
+              <string>SIN(a)</string>
+              <string>c</string>
+            </fitnessEquations>
+            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessValue>2.2929983311452293E57</fitnessValue>
+            <nodeNames>
+              <string>Converter1</string>
+              <string>Converter2</string>
+              <string>Source1</string>
+              <string>Source2</string>
+              <string>Sink1</string>
+            </nodeNames>
+            <stepSize>0.5</stepSize>
+          </default>
+        </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      <gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+        <unserializable-parents/>
+        <list>
+          <default>
+            <size>3</size>
+          </default>
+          <int>3</int>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.4296136473419467</double>
+                  <double>0.5703863526580534</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.7816656866255788</double>
+                  <double>0.21833431337442116</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5219334919774385</double>
+                  <double>0.47806650802256145</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.9535466065416422</double>
+                  <double>0.046453393458357806</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>0.30893837545795766</double>
+                  <double>0.6910616245420423</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>((a + b) * ((a - a) / this.zeroFill(a)))</string>
+              <string>(a + b + (a - a))</string>
+              <string>(((10.4 + ((a / this.zeroFill(a)) * a)) - (a + a)) - ((a * a) / this.zeroFill(a)))</string>
+              <string>((((10.4) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a)))) * (((a / this.zeroFill(a)) / this.zeroFill(a)) * a))</string>
+              <string>(((c * c) / this.zeroFill(c)))</string>
+            </equations>
+            <name>a</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit">
+                <__symbol>kg</__symbol>
+              </__unit>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.47271870059898663</double>
+                  <double>0.5272812994010133</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.47065514186576485</double>
+                  <double>0.5293448581342352</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.711639596225839</double>
+                  <double>0.2883604037741609</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.4027538520615954</double>
+                  <double>0.5972461479384046</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.08333470612675707</double>
+                  <double>0.22029465151792166</double>
+                  <double>0.39137676061156823</double>
+                  <double>0.30499388174375314</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>((((9.3) * (a / this.zeroFill(a)))) * (((a / this.zeroFill(a)) / this.zeroFill(a)) * a))</string>
+              <string>9.3</string>
+              <string>(a)</string>
+              <string>((a - b - (((a + a) * a) / this.zeroFill(a))) + (((a / this.zeroFill(a)) * a) + a))</string>
+              <string>(c)</string>
+            </equations>
+            <name>b</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((a) - ((a * a) / this.zeroFill(a))) + a)</string>
+              <string>(1.0 + a)</string>
+              <string>INTEG((((a + b + a)) * (a / this.zeroFill(a))), 39.8)</string>
+              <string>INTEG((((((a + b) * (a / this.zeroFill(a))) - a)) * (a / this.zeroFill(a))), 39.8)</string>
+              <string>((((c + c) + c)) * (((c / this.zeroFill(c)) * c) / this.zeroFill(c)))</string>
+            </equations>
+            <name>c</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+        </list>
+        <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+          <default>
+            <equationEvolution>true</equationEvolution>
+            <stepCount>101</stepCount>
+            <fitnessEquations>
+              <string>a + b</string>
+              <string>a + b</string>
+              <string>SIN(a)</string>
+              <string>SIN(a)</string>
+              <string>c</string>
+            </fitnessEquations>
+            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessValue>5.50690679556716E53</fitnessValue>
+            <nodeNames>
+              <string>Converter1</string>
+              <string>Converter2</string>
+              <string>Source1</string>
+              <string>Source2</string>
+              <string>Sink1</string>
+            </nodeNames>
+            <stepSize>0.5</stepSize>
+          </default>
+        </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      <gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+        <unserializable-parents/>
+        <list>
+          <default>
+            <size>3</size>
+          </default>
+          <int>3</int>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.43493165676799495</double>
+                  <double>0.565068343232005</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.6221486518011261</double>
+                  <double>0.37785134819887384</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.8329043200579164</double>
+                  <double>0.16709567994208369</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.3652823960699198</double>
+                  <double>0.6347176039300803</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>0.6379073479059738</double>
+                  <double>0.36209265209402614</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((a + b) * ((a - a) / this.zeroFill(a))) + a)</string>
+              <string>((a + b + (a - a)) - ((a * a) / this.zeroFill(a)))</string>
+              <string>(((10.4 + ((a / this.zeroFill(a)) * a)) - (a + a)) - ((a / this.zeroFill(a)) * a))</string>
+              <string>(((10.4) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a))) - a)</string>
+              <string>((((c + c)) * (((c / this.zeroFill(c)) * c) / this.zeroFill(c))) + c)</string>
+            </equations>
+            <name>a</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit">
+                <__symbol>kg</__symbol>
+              </__unit>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.32600479319228076</double>
+                  <double>0.6739952068077193</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.1722953329533477</double>
+                  <double>0.8277046670466522</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.9147441694396152</double>
+                  <double>0.08525583056038474</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5127296636747516</double>
+                  <double>0.4872703363252484</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.23633507392242759</double>
+                  <double>0.19463878094436693</double>
+                  <double>0.28909137815283253</double>
+                  <double>0.27993476698037295</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>((9.3) * (a / this.zeroFill(a)))</string>
+              <string>((9.3) * (a / this.zeroFill(a)))</string>
+              <string>(((((a - b) * (a / this.zeroFill(a))) + a)) * (a / this.zeroFill(a)))</string>
+              <string>((a - b - (((a + a) * a) / this.zeroFill(a))) - a)</string>
+              <string>(((((c / this.zeroFill(c)) * c)) - c) - c)</string>
+            </equations>
+            <name>b</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>((((a) - ((a * a) / this.zeroFill(a)))) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a)))</string>
+              <string>(((a / this.zeroFill(a)) * a))</string>
+              <string>INTEG(((((a + b + a)) * (a / this.zeroFill(a))) - a), 39.8)</string>
+              <string>INTEG((((a + b) * (a / this.zeroFill(a))) - a), 39.8)</string>
+              <string>((c + c) + c)</string>
+            </equations>
+            <name>c</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+        </list>
+        <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+          <default>
+            <equationEvolution>true</equationEvolution>
+            <stepCount>101</stepCount>
+            <fitnessEquations>
+              <string>a + b</string>
+              <string>a + b</string>
+              <string>SIN(a)</string>
+              <string>SIN(a)</string>
+              <string>c</string>
+            </fitnessEquations>
+            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessValue>2.7177095356982255E53</fitnessValue>
+            <nodeNames>
+              <string>Converter1</string>
+              <string>Converter2</string>
+              <string>Source1</string>
+              <string>Source2</string>
+              <string>Sink1</string>
+            </nodeNames>
+            <stepSize>0.5</stepSize>
+          </default>
+        </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      <gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+        <unserializable-parents/>
+        <list>
+          <default>
+            <size>3</size>
+          </default>
+          <int>3</int>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.24460713588955552</double>
+                  <double>0.7553928641104445</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.8534388586559145</double>
+                  <double>0.14656114134408554</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.6906531473054066</double>
+                  <double>0.30934685269459344</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5405071088861273</double>
+                  <double>0.4594928911138727</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>0.24235020756592204</double>
+                  <double>0.7576497924340779</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>((a + b) * ((a - a) / this.zeroFill(a)))</string>
+              <string>(a + b + (a - a))</string>
+              <string>((10.4 + ((a / this.zeroFill(a)) * a)) - (a + a))</string>
+              <string>((10.4) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a)))</string>
+              <string>(((c + c)) * (((c / this.zeroFill(c)) * c) / this.zeroFill(c)))</string>
+            </equations>
+            <name>a</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit">
+                <__symbol>kg</__symbol>
+              </__unit>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.4384809131592954</double>
+                  <double>0.5615190868407046</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.8828233495708205</double>
+                  <double>0.11717665042917949</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.975015812751113</double>
+                  <double>0.024984187248886937</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5043911684414367</double>
+                  <double>0.4956088315585633</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.037768952528414744</double>
+                  <double>0.4339448455571208</double>
+                  <double>0.2344598548169675</double>
+                  <double>0.29382634709749683</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>((9.3) * (a / this.zeroFill(a)))</string>
+              <string>9.3</string>
+              <string>(((a - b) * (a / this.zeroFill(a))) + a)</string>
+              <string>(a - b - (((a + a) * a) / this.zeroFill(a)))</string>
+              <string>((((c / this.zeroFill(c)) * c)) - c)</string>
+            </equations>
+            <name>b</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>((a) - ((a * a) / this.zeroFill(a)))</string>
+              <string>(1.0 + a)</string>
+              <string>INTEG((((a + b + a)) * (a / this.zeroFill(a))), 39.8)</string>
+              <string>INTEG((((a + b) * (a / this.zeroFill(a))) - a), 39.8)</string>
+              <string>((c + c) + c)</string>
+            </equations>
+            <name>c</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+        </list>
+        <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+          <default>
+            <equationEvolution>true</equationEvolution>
+            <stepCount>101</stepCount>
+            <fitnessEquations>
+              <string>a + b</string>
+              <string>a + b</string>
+              <string>SIN(a)</string>
+              <string>SIN(a)</string>
+              <string>c</string>
+            </fitnessEquations>
+            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessValue>5.343517073574545E52</fitnessValue>
+            <nodeNames>
+              <string>Converter1</string>
+              <string>Converter2</string>
+              <string>Source1</string>
+              <string>Source2</string>
+              <string>Sink1</string>
+            </nodeNames>
+            <stepSize>0.5</stepSize>
+          </default>
+        </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      <gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+        <unserializable-parents/>
+        <list>
+          <default>
+            <size>3</size>
+          </default>
+          <int>3</int>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.34007315056960674</double>
+                  <double>0.6599268494303933</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.9873872935934852</double>
+                  <double>0.012612706406514778</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5457637579823607</double>
+                  <double>0.45423624201763935</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.31379034038229475</double>
+                  <double>0.6862096596177053</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>0.3895709284103568</double>
+                  <double>0.6104290715896432</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((a + b) * ((a - a) / this.zeroFill(a))) + a)</string>
+              <string>((a + b + (a - a)) - ((a * a) / this.zeroFill(a)))</string>
+              <string>(a)</string>
+              <string>(((((10.4) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a))) - a)) * (a / this.zeroFill(a)))</string>
+              <string>(((((c + c)) * (((c / this.zeroFill(c)) * c) / this.zeroFill(c))) + c) + c)</string>
+            </equations>
+            <name>a</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit">
+                <__symbol>kg</__symbol>
+              </__unit>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.24980449760403803</double>
+                  <double>0.750195502395962</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.24796857294016095</double>
+                  <double>0.752031427059839</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.6033750489747502</double>
+                  <double>0.39662495102524975</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5471704324190111</double>
+                  <double>0.45282956758098886</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.10041843400018804</double>
+                  <double>0.23168717900781263</double>
+                  <double>0.35099947888339245</double>
+                  <double>0.3168949081086069</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>((((9.3) * (a / this.zeroFill(a)))) * (((a / this.zeroFill(a)) * a) / this.zeroFill(a)))</string>
+              <string>((((9.3) * (a / this.zeroFill(a)))) * (a / this.zeroFill(a)))</string>
+              <string>(((((a - b) * (a / this.zeroFill(a))) + a)) * (a / this.zeroFill(a)))</string>
+              <string>((a - b - (((a + a) * a) / this.zeroFill(a))) - a)</string>
+              <string>((((((c / this.zeroFill(c)) * c)) - c) - c) - c)</string>
+            </equations>
+            <name>b</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((((a) - ((a * a) / this.zeroFill(a)))) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a))) - ((a * a) / this.zeroFill(a)))</string>
+              <string>((((a / this.zeroFill(a)) * a)) + ((a * a) / this.zeroFill(a)))</string>
+              <string>INTEG(((((a + b + a)) * (a / this.zeroFill(a))) - a), 39.8)</string>
+              <string>INTEG((((a + b) * (a / this.zeroFill(a))) - a), 39.8)</string>
+              <string>((c + c) + c)</string>
+            </equations>
+            <name>c</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+        </list>
+        <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+          <default>
+            <equationEvolution>true</equationEvolution>
+            <stepCount>101</stepCount>
+            <fitnessEquations>
+              <string>a + b</string>
+              <string>a + b</string>
+              <string>SIN(a)</string>
+              <string>SIN(a)</string>
+              <string>c</string>
+            </fitnessEquations>
+            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessValue>1.982897692080235E50</fitnessValue>
+            <nodeNames>
+              <string>Converter1</string>
+              <string>Converter2</string>
+              <string>Source1</string>
+              <string>Source2</string>
+              <string>Sink1</string>
+            </nodeNames>
+            <stepSize>0.5</stepSize>
+          </default>
+        </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      <gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+        <unserializable-parents/>
+        <list>
+          <default>
+            <size>3</size>
+          </default>
+          <int>3</int>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.5172169182468112</double>
+                  <double>0.4827830817531888</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5049758995789186</double>
+                  <double>0.49502410042108136</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5234720534693302</double>
+                  <double>0.4765279465306697</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.16729862699389506</double>
+                  <double>0.8327013730061049</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>0.3377405906268571</double>
+                  <double>0.6622594093731429</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>((a + b) * ((a - a) / this.zeroFill(a)))</string>
+              <string>a + b</string>
+              <string>(10.4 + ((a / this.zeroFill(a)) * a))</string>
+              <string>((10.4) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a)))</string>
+              <string>(c + c)</string>
+            </equations>
+            <name>a</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit">
+                <__symbol>kg</__symbol>
+              </__unit>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.6614057949320574</double>
+                  <double>0.3385942050679426</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5666336497467239</double>
+                  <double>0.433366350253276</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5806743347308986</double>
+                  <double>0.4193256652691014</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.07573624461238106</double>
+                  <double>0.924263755387619</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.014731149457467483</double>
+                  <double>0.6276935605538145</double>
+                  <double>0.11580046701343245</double>
+                  <double>0.24177482297528552</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>9.3</string>
+              <string>9.3</string>
+              <string>((a - b) * (a / this.zeroFill(a)))</string>
+              <string>a - b</string>
+              <string>(((c / this.zeroFill(c)) * c))</string>
+            </equations>
+            <name>b</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(a)</string>
+              <string>1.0</string>
+              <string>INTEG((a + b + a), 39.8)</string>
+              <string>INTEG(((a + b) * (a / this.zeroFill(a))), 39.8)</string>
+              <string>(c + c)</string>
+            </equations>
+            <name>c</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+        </list>
+        <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+          <default>
+            <equationEvolution>true</equationEvolution>
+            <stepCount>101</stepCount>
+            <fitnessEquations>
+              <string>a + b</string>
+              <string>a + b</string>
+              <string>SIN(a)</string>
+              <string>SIN(a)</string>
+              <string>c</string>
+            </fitnessEquations>
+            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessValue>2.09951680907986E47</fitnessValue>
+            <nodeNames>
+              <string>Converter1</string>
+              <string>Converter2</string>
+              <string>Source1</string>
+              <string>Source2</string>
+              <string>Sink1</string>
+            </nodeNames>
+            <stepSize>0.5</stepSize>
+          </default>
+        </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      <gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+        <unserializable-parents/>
+        <list>
+          <default>
+            <size>3</size>
+          </default>
+          <int>3</int>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.5078571275592222</double>
+                  <double>0.4921428724407778</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.581476969911769</double>
+                  <double>0.418523030088231</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5082754723844464</double>
+                  <double>0.49172452761555363</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.2694256321613186</double>
+                  <double>0.7305743678386813</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>0.57929663666502</double>
+                  <double>0.4207033633349801</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((((((a + b) * ((a - a) / this.zeroFill(a))) + a)) * (a / this.zeroFill(a)))) * (a / this.zeroFill(a)))</string>
+              <string>((a + b + (a - a)) - ((a * a) / this.zeroFill(a)))</string>
+              <string>((a) + a)</string>
+              <string>(((a - a)) + a)</string>
+              <string>(c)</string>
+            </equations>
+            <name>a</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit">
+                <__symbol>kg</__symbol>
+              </__unit>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.19270579406949293</double>
+                  <double>0.807294205930507</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5897310961523179</double>
+                  <double>0.41026890384768205</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.24706505685008298</double>
+                  <double>0.752934943149917</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.6686504294666322</double>
+                  <double>0.3313495705333678</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.479059121168129</double>
+                  <double>0.14007152312275067</double>
+                  <double>0.28803654613712026</double>
+                  <double>0.09283280957200009</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((9.3) * (a / this.zeroFill(a))) + a)</string>
+              <string>(((((9.3) * (a / this.zeroFill(a)))) * (a / this.zeroFill(a))) - (((a * a) / this.zeroFill(a)) - a))</string>
+              <string>(((((a - a) / this.zeroFill(a)) * a)) + a)</string>
+              <string>((a - b - (((a + a) * a) / this.zeroFill(a))) - a)</string>
+              <string>((((c * c) / this.zeroFill(c))) - ((c * c) / this.zeroFill(c)))</string>
+            </equations>
+            <name>b</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((((((a) - ((a * a) / this.zeroFill(a)))) * (((a * a) / this.zeroFill(a)) / this.zeroFill(a)))) * (a / this.zeroFill(a))) + ((a / this.zeroFill(a)) * a))</string>
+              <string>((((((a / this.zeroFill(a)) * a))) * ((a + a) / this.zeroFill(a))) - a)</string>
+              <string>INTEG((((((a + b + a)) * (a / this.zeroFill(a))) - a) + a), 39.8)</string>
+              <string>INTEG(((((((a + b) * (a / this.zeroFill(a))) - a)) * (a / this.zeroFill(a))) + ((a / this.zeroFill(a)) * a)), 39.8)</string>
+              <string>(((c + c) + c) - c)</string>
+            </equations>
+            <name>c</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+        </list>
+        <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+          <default>
+            <equationEvolution>true</equationEvolution>
+            <stepCount>101</stepCount>
+            <fitnessEquations>
+              <string>a + b</string>
+              <string>a + b</string>
+              <string>SIN(a)</string>
+              <string>SIN(a)</string>
+              <string>c</string>
+            </fitnessEquations>
+            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessValue>1.8267238059634912E42</fitnessValue>
+            <nodeNames>
+              <string>Converter1</string>
+              <string>Converter2</string>
+              <string>Source1</string>
+              <string>Source2</string>
+              <string>Sink1</string>
+            </nodeNames>
+            <stepSize>0.5</stepSize>
+          </default>
+        </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      <gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+        <unserializable-parents/>
+        <list>
+          <default>
+            <size>3</size>
+          </default>
+          <int>3</int>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.7682390291617929</double>
+                  <double>0.23176097083820707</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.32795539950555175</double>
+                  <double>0.6720446004944483</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.4319928792276189</double>
+                  <double>0.568007120772381</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.9172787739449529</double>
+                  <double>0.08272122605504706</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>0.5918268845334055</double>
+                  <double>0.4081731154665945</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((((a + b) * ((a - a) / this.zeroFill(a))) + a)) * (a / this.zeroFill(a)))</string>
+              <string>((a + b + (a - a)) - ((a * a) / this.zeroFill(a)))</string>
+              <string>((a) + ((a / this.zeroFill(a)) * a))</string>
+              <string>(a)</string>
+              <string>(((c * c) / this.zeroFill(c)))</string>
+            </equations>
+            <name>a</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit">
+                <__symbol>kg</__symbol>
+              </__unit>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>0.7406693339550372</double>
+                  <double>0.2593306660449628</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.5272808166791645</double>
+                  <double>0.4727191833208355</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.6228514610123858</double>
+                  <double>0.3771485389876143</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.9789103947749479</double>
+                  <double>0.02108960522505205</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>0.1554252232606807</double>
+                  <double>0.30471762298438426</double>
+                  <double>0.17434843322370985</double>
+                  <double>0.36550872053122524</double>
+                  <double>NaN</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(((9.3) * (a / this.zeroFill(a))) - (a - a))</string>
+              <string>((((a - a) * a) / this.zeroFill(a)))</string>
+              <string>(((((a - a) / this.zeroFill(a)) * a)) - a)</string>
+              <string>((a - b - (((a + a) * a) / this.zeroFill(a))) - a)</string>
+              <string>(((c * c) / this.zeroFill(c)))</string>
+            </equations>
+            <name>b</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+              <data>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+                <double-array>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>NaN</double>
+                  <double>1.0</double>
+                </double-array>
+              </data>
+            </coefficients>
+            <equations>
+              <string>(a)</string>
+              <string>(((((((a / this.zeroFill(a)) * a))) * ((a + a) / this.zeroFill(a)))) * (((a / this.zeroFill(a)) * a) / this.zeroFill(a)))</string>
+              <string>INTEG(((((((a + b + a)) * (a / this.zeroFill(a))) - a)) * (a / this.zeroFill(a))), 39.8)</string>
+              <string>INTEG((((((((a + b) * (a / this.zeroFill(a))) - a)) * (a / this.zeroFill(a)))) * (a / this.zeroFill(a))), 39.8)</string>
+              <string>((((c * c) / this.zeroFill(c)) + c))</string>
+            </equations>
+            <name>c</name>
+            <units>
+              <__isExact>false</__isExact>
+              <__exactValue>0</__exactValue>
+              <__minimum>0.9999999999999999</__minimum>
+              <__maximum>1.0</__maximum>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+            </units>
+          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+        </list>
+        <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+          <default>
+            <equationEvolution>true</equationEvolution>
+            <stepCount>101</stepCount>
+            <fitnessEquations>
+              <string>a + b</string>
+              <string>a + b</string>
+              <string>SIN(a)</string>
+              <string>SIN(a)</string>
+              <string>c</string>
+            </fitnessEquations>
+            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessValue>1.6484559449402383E40</fitnessValue>
+            <nodeNames>
+              <string>Converter1</string>
+              <string>Converter2</string>
+              <string>Source1</string>
+              <string>Source2</string>
+              <string>Sink1</string>
+            </nodeNames>
+            <stepSize>0.5</stepSize>
+          </default>
+        </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+      </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+    </list>
+  </outputPopulation>
+</gov.anl.cue.sdga.engine.matrix.MatrixEngine>

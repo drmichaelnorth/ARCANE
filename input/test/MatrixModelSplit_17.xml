@@ -1,0 +1,17 @@
+<sorted-set>
+  <string>a_Converter1 = 0.6 * a_Source1_combined + 0.1 * a_Sink1_combined</string>
+  <string>a_Converter2 = 0.6 * a_Converter2_combined + 0.4 * a_Source1_combined + 0.9 * a_Source2_combined</string>
+  <string>a_Sink1 = 0.7 * a_Sink1_combined</string>
+  <string>a_Source1 = 0.1 * a_Sink1_combined</string>
+  <string>a_Source2 = 0.4 * a_Converter2_combined + 0.1 * a_Source2_combined + 0.1 * a_Sink1_combined</string>
+  <string>b_Converter1 = 0.1 * b_Source1_combined</string>
+  <string>b_Converter2 = 0.7 * b_Converter2_combined + 0.5 * b_Source2_combined</string>
+  <string>b_Sink1 = 0.1 * b_Converter2_combined + 0.3 * b_Source1_combined</string>
+  <string>b_Source1 = 0.6 * b_Source1_combined</string>
+  <string>b_Source2 = 0.2 * b_Converter2_combined + 0.5 * b_Source2_combined</string>
+  <string>c_Converter1 = 0.4 * c_Converter1_combined + 0.6 * c_Source1_combined + 0.1 * c_Source2_combined</string>
+  <string>c_Converter2 = 0.7 * c_Source2_combined + 0.5 * c_Sink1_combined</string>
+  <string>c_Sink1 = 0.6 * c_Converter2_combined + 0.4 * c_Source1_combined + 0.1 * c_Source2_combined + 0.5 * c_Sink1_combined</string>
+  <string>c_Source1 = 0.4 * c_Converter2_combined</string>
+  <string>c_Source2 = 0.6 * c_Converter1_combined + 0.1 * c_Source2_combined</string>
+</sorted-set>

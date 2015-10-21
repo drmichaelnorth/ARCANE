@@ -1,0 +1,59 @@
+<gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+  <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
+    <data>
+      <double-array>
+        <double>NaN</double>
+        <double>NaN</double>
+        <double>NaN</double>
+        <double>NaN</double>
+        <double>NaN</double>
+      </double-array>
+      <double-array>
+        <double>NaN</double>
+        <double>NaN</double>
+        <double>0.5</double>
+        <double>0.5</double>
+        <double>NaN</double>
+      </double-array>
+      <double-array>
+        <double>NaN</double>
+        <double>0.5</double>
+        <double>NaN</double>
+        <double>NaN</double>
+        <double>0.5</double>
+      </double-array>
+      <double-array>
+        <double>NaN</double>
+        <double>0.25</double>
+        <double>0.25</double>
+        <double>0.25</double>
+        <double>0.25</double>
+      </double-array>
+      <double-array>
+        <double>NaN</double>
+        <double>0.5</double>
+        <double>NaN</double>
+        <double>NaN</double>
+        <double>0.5</double>
+      </double-array>
+    </data>
+  </coefficients>
+  <equations>
+    <string>a + b</string>
+    <string>4.5</string>
+    <string>INTEG(b + c, 39.8)</string>
+    <string>c</string>
+    <string>a + c</string>
+  </equations>
+  <name>c</name>
+  <units>
+    <__isExact>true</__isExact>
+    <__exactValue>1</__exactValue>
+    <__minimum>1.0</__minimum>
+    <__maximum>1.0</__maximum>
+    <__unit class="javax.measure.unit.ProductUnit">
+      <__elements/>
+      <__hashCode>0</__hashCode>
+    </__unit>
+  </units>
+</gov.anl.cue.sdga.engine.matrix.MatrixVariable>

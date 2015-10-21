@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://repast.sf.net/systemdynamics" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <SystemModel xmi:id="__VZtwGkfEeSjsq7j1gAbXg" endTime="100.0" timeStep="1.0" units="Day [0,?]" reportingInterval="1.0" className="DrugMarket" package="gov.anl.cue.sd">
+    <links xmi:type="InfluenceLink" xmi:id="_1-d34DSkEeWNq9Bhd1BJTg" from="_0eRQcDSkEeWNq9Bhd1BJTg" to="__VZtymkfEeSjsq7j1gAbXg"/>
+    <links xmi:type="InfluenceLink" xmi:id="_3s_2QDSkEeWNq9Bhd1BJTg" from="_2_IDoDSkEeWNq9Bhd1BJTg" to="_0eRQcDSkEeWNq9Bhd1BJTg"/>
+    <variables xmi:type="Rate" xmi:id="__VZtxmkfEeSjsq7j1gAbXg" uuid="__VUOMGkfEeSjsq7j1gAbXg" name="Drug Dealing" type="rate" units="kg/Day" equation="CONUS Drugs/TIME STEP" comment="" lhs="Drug Dealing" to="__VZtz2kfEeSjsq7j1gAbXg" from="__VZtymkfEeSjsq7j1gAbXg"/>
+    <variables xmi:type="Cloud" xmi:id="__VZtyWkfEeSjsq7j1gAbXg" uuid="__VVcUmkfEeSjsq7j1gAbXg" name="CLOUD_46" lhs="CLOUD_46"/>
+    <variables xmi:type="Stock" xmi:id="__VZtymkfEeSjsq7j1gAbXg" uuid="__VXRgGkfEeSjsq7j1gAbXg" name="CONUS Drugs" type="stock" units="kg" equation="CONUS Drug Production+Drug Smuggling-Drug Dealing" comment="" lhs="CONUS Drugs" initialValue="50"/>
+    <variables xmi:type="Cloud" xmi:id="__VZty2kfEeSjsq7j1gAbXg" uuid="__VXRgWkfEeSjsq7j1gAbXg" name="CLOUD_40" lhs="CLOUD_40"/>
+    <variables xmi:type="Stock" xmi:id="__VZtzGkfEeSjsq7j1gAbXg" uuid="__VX4kGkfEeSjsq7j1gAbXg" name="OCONUS Drugs" type="stock" units="kg" equation="OCONUS Drug Production-Drug Smuggling" comment="" lhs="OCONUS Drugs" initialValue="1000"/>
+    <variables xmi:type="Rate" xmi:id="__VZtzWkfEeSjsq7j1gAbXg" uuid="__VX4kWkfEeSjsq7j1gAbXg" name="Drug Smuggling" type="rate" units="kg/Day" equation="0.1*OCONUS Drugs/TIME STEP" comment="" lhs="Drug Smuggling" to="__VZtymkfEeSjsq7j1gAbXg" from="__VZtzGkfEeSjsq7j1gAbXg"/>
+    <variables xmi:type="Rate" xmi:id="__VZtzmkfEeSjsq7j1gAbXg" uuid="__VX4kmkfEeSjsq7j1gAbXg" name="OCONUS Drug Production" type="rate" units="kg/Day" equation="100*TIME STEP" comment="" lhs="OCONUS Drug Production" to="__VZtzGkfEeSjsq7j1gAbXg" from="__VZtyWkfEeSjsq7j1gAbXg"/>
+    <variables xmi:type="Stock" xmi:id="__VZtz2kfEeSjsq7j1gAbXg" uuid="__VX4k2kfEeSjsq7j1gAbXg" name="User Drugs" type="stock" units="kg" equation="Drug Dealing-Drug Use" comment="" lhs="User Drugs"/>
+    <variables xmi:type="Rate" xmi:id="__VZt0GkfEeSjsq7j1gAbXg" uuid="__VX4lGkfEeSjsq7j1gAbXg" name="Drug Use" type="rate" units="kg/Day" equation="User Drugs/TIME STEP" comment="" lhs="Drug Use" to="__VZty2kfEeSjsq7j1gAbXg" from="__VZtz2kfEeSjsq7j1gAbXg"/>
+    <variables xmi:type="Variable" xmi:id="_0eRQcDSkEeWNq9Bhd1BJTg" uuid="_0eSekDSkEeWNq9Bhd1BJTg" name="Cash" type="auxiliary" lhs="Cash"/>
+    <variables xmi:type="Variable" xmi:id="_2_IDoDSkEeWNq9Bhd1BJTg" uuid="_2_JRwDSkEeWNq9Bhd1BJTg" name="Credit" type="auxiliary" lhs="Credit"/>
+  </SystemModel>
+  <notation:Diagram xmi:id="__Va74GkfEeSjsq7j1gAbXg" type="Systemdynamics" element="__VZtwGkfEeSjsq7j1gAbXg" name="DrugMarketInput.rsd" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="__j9HIGkfEeSjsq7j1gAbXg" type="2002" element="__VZtyWkfEeSjsq7j1gAbXg" fontName="Lucida Grande" fontHeight="12">
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__j9HIWkfEeSjsq7j1gAbXg" x="162" y="63"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="__j9uMGkfEeSjsq7j1gAbXg" type="2003" element="__VZtymkfEeSjsq7j1gAbXg" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="__j9uMmkfEeSjsq7j1gAbXg" type="5002"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__j9uMWkfEeSjsq7j1gAbXg" x="351" y="207"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="__j9uM2kfEeSjsq7j1gAbXg" type="2002" element="__VZty2kfEeSjsq7j1gAbXg" fontName="Lucida Grande" fontHeight="12">
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__j9uNGkfEeSjsq7j1gAbXg" x="720" y="207"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="__j-VQGkfEeSjsq7j1gAbXg" type="2003" element="__VZtzGkfEeSjsq7j1gAbXg" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="__j-VQmkfEeSjsq7j1gAbXg" type="5002"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__j-VQWkfEeSjsq7j1gAbXg" x="126" y="207"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="__j-VQ2kfEeSjsq7j1gAbXg" type="2003" element="__VZtz2kfEeSjsq7j1gAbXg" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="__j-8UGkfEeSjsq7j1gAbXg" type="5002"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__j-VRGkfEeSjsq7j1gAbXg" x="531" y="198"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_0eTFoDSkEeWNq9Bhd1BJTg" type="2001" element="_0eRQcDSkEeWNq9Bhd1BJTg" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="_0eTFojSkEeWNq9Bhd1BJTg" type="5001"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0eTFoTSkEeWNq9Bhd1BJTg" x="399" y="117"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_2_J40DSkEeWNq9Bhd1BJTg" type="2001" element="_2_IDoDSkEeWNq9Bhd1BJTg" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="_2_J40jSkEeWNq9Bhd1BJTg" type="5001"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2_J40TSkEeWNq9Bhd1BJTg" x="446" y="66"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="__Va74WkfEeSjsq7j1gAbXg"/>
+    <edges xmi:type="notation:Edge" xmi:id="__lO5gGkfEeSjsq7j1gAbXg" type="4003" element="__VZtxmkfEeSjsq7j1gAbXg" source="__j9uMGkfEeSjsq7j1gAbXg" target="__j-VQ2kfEeSjsq7j1gAbXg">
+      <children xmi:type="notation:DecorationNode" xmi:id="__lPgkGkfEeSjsq7j1gAbXg" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__lPgkWkfEeSjsq7j1gAbXg" x="12" y="12"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="__lO5gWkfEeSjsq7j1gAbXg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="__lO5gmkfEeSjsq7j1gAbXg" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__lO5g2kfEeSjsq7j1gAbXg" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__monsWkfEeSjsq7j1gAbXg" id="(0.4946236559139785,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__mpOwGkfEeSjsq7j1gAbXg" id="(0.4935064935064935,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="__lv24GkfEeSjsq7j1gAbXg" type="4003" element="__VZtzWkfEeSjsq7j1gAbXg" source="__j-VQGkfEeSjsq7j1gAbXg" target="__j9uMGkfEeSjsq7j1gAbXg">
+      <children xmi:type="notation:DecorationNode" xmi:id="__lwd8GkfEeSjsq7j1gAbXg" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__lwd8WkfEeSjsq7j1gAbXg" x="12" y="12"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="__lv24WkfEeSjsq7j1gAbXg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="__lv24mkfEeSjsq7j1gAbXg" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__lv242kfEeSjsq7j1gAbXg" points="[51, -8, -169, 23]$[174, -25, -46, 6]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__moAoGkfEeSjsq7j1gAbXg" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__monsGkfEeSjsq7j1gAbXg" id="(0.4946236559139785,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="__ly6MGkfEeSjsq7j1gAbXg" type="4003" element="__VZtzmkfEeSjsq7j1gAbXg" source="__j9HIGkfEeSjsq7j1gAbXg" target="__j-VQGkfEeSjsq7j1gAbXg">
+      <children xmi:type="notation:DecorationNode" xmi:id="__lzhQGkfEeSjsq7j1gAbXg" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__lzhQWkfEeSjsq7j1gAbXg" x="12" y="12"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="__ly6MWkfEeSjsq7j1gAbXg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="__ly6MmkfEeSjsq7j1gAbXg" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__ly6M2kfEeSjsq7j1gAbXg" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__mpOwWkfEeSjsq7j1gAbXg" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__mp10GkfEeSjsq7j1gAbXg" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="__l19gGkfEeSjsq7j1gAbXg" type="4003" element="__VZt0GkfEeSjsq7j1gAbXg" source="__j-VQ2kfEeSjsq7j1gAbXg" target="__j9uM2kfEeSjsq7j1gAbXg">
+      <children xmi:type="notation:DecorationNode" xmi:id="__l19hGkfEeSjsq7j1gAbXg" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__l19hWkfEeSjsq7j1gAbXg" x="12" y="12"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="__l19gWkfEeSjsq7j1gAbXg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="__l19gmkfEeSjsq7j1gAbXg" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__l19g2kfEeSjsq7j1gAbXg" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__mp10WkfEeSjsq7j1gAbXg" id="(0.4935064935064935,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__mqc4GkfEeSjsq7j1gAbXg" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_1-d34TSkEeWNq9Bhd1BJTg" type="4004" element="_1-d34DSkEeWNq9Bhd1BJTg" source="_0eTFoDSkEeWNq9Bhd1BJTg" target="__j9uMGkfEeSjsq7j1gAbXg">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_1-d34jSkEeWNq9Bhd1BJTg" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_1-d34zSkEeWNq9Bhd1BJTg" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1-d35DSkEeWNq9Bhd1BJTg" points="[-3, 14, 19, -83]$[-19, 77, 3, -20]"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_3tAdUDSkEeWNq9Bhd1BJTg" type="4004" element="_3s_2QDSkEeWNq9Bhd1BJTg" source="_2_J40DSkEeWNq9Bhd1BJTg" target="_0eTFoDSkEeWNq9Bhd1BJTg">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_3tAdUTSkEeWNq9Bhd1BJTg" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_3tAdUjSkEeWNq9Bhd1BJTg" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3tAdUzSkEeWNq9Bhd1BJTg" points="[-13, 14, 38, -37]$[-47, 65, 4, 14]"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
