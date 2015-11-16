@@ -43,9 +43,7 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine.matrix;
-
-import gov.anl.cue.sdga.engine.Util;
+package gov.anl.cue.arcane.engine.matrix;
 
 import java.beans.Transient;
 import java.io.File;
@@ -53,6 +51,8 @@ import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+
+import gov.anl.cue.arcane.engine.Util;
 
 /**
  * The MatrixPopulation class is a container for a sorted list

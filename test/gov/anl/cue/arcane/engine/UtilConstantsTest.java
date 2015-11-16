@@ -43,46 +43,57 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine;
+package gov.anl.cue.arcane.engine;
 
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
+import org.junit.Assert;
+import org.junit.Test;
+
+import gov.anl.cue.arcane.engine.UtilConstants;
 
 /**
- * The UtilConstants class supports the Util class
- * by providing externally stored string constants.
+ * The UtilConstantsTest class is used to test the UtilConstants class.
  */
-public class UtilConstants {
-	
-	/** The Constant BUNDLE_NAME. */
-	private static final String BUNDLE_NAME = "gov.anl.cue.sdga.engine.UtilConstants";
-
-	/** The Constant RESOURCE_BUNDLE. */
-	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle
-			.getBundle(BUNDLE_NAME);
+public class UtilConstantsTest {
 
 	/**
-	 * Gets the string.
-	 *
-	 * @param key the key
-	 * @return the string
+	 * Instantiates a new util constants test.
 	 */
-	public static String getString(String key) {
+	public UtilConstantsTest() {
+	}
+
+	/**
+	 * Test the constructor.
+	 */
+	@Test
+	public void testUtilConstants() {
 		
-		// Attempt to find the requested key.
-		try {
-			
-			// Attempt to find the requested value.
-			return RESOURCE_BUNDLE.getString(key);
-			
-		// Catch errors.
-		} catch (MissingResourceException e) {
-			
-			// Note an error.
-			return '!' + key + '!';
-			
-		}
-		
+		// Run a test.
+		Assert.assertNotNull(new UtilConstants());
+
+	}
+
+	/**
+	 * Test get string regular.
+	 */
+	@Test
+	public void testGetStringRegular() {
+
+		// Test a request for an existing string.
+		Assert.assertTrue(UtilConstants.getString("Util.0")
+				.equals("src-gen"));
+
 	}
 	
+	/**
+	 * Test get string invalid.
+	 */
+	@Test
+	public void testGetString() {
+
+		// Test a request for an nonexistent string.
+		Assert.assertTrue(UtilConstants.getString("ABC")
+				.equals("!ABC!"));
+
+	}
+
 }

@@ -43,11 +43,13 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine.matrix;
+package gov.anl.cue.arcane.engine.matrix;
 
-import gov.anl.cue.sdga.engine.Util;
-import gov.anl.cue.sdga.engine.UtilTest;
-import gov.anl.cue.sdga.engine.matrix.MatrixModel.FITNESS_FUNCTION_TYPE;
+import gov.anl.cue.arcane.engine.Util;
+import gov.anl.cue.arcane.engine.UtilTest;
+import gov.anl.cue.arcane.engine.matrix.MatrixEngine;
+import gov.anl.cue.arcane.engine.matrix.MatrixModel;
+import gov.anl.cue.arcane.engine.matrix.MatrixModel.FITNESS_FUNCTION_TYPE;
 
 import java.io.File;
 import java.io.IOException;

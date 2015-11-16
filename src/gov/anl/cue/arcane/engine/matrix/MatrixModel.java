@@ -43,16 +43,7 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine.matrix;
-
-import edu.uci.ics.jung.algorithms.layout.CircleLayout;
-import edu.uci.ics.jung.algorithms.layout.Layout;
-import edu.uci.ics.jung.graph.DirectedSparseMultigraph;
-import edu.uci.ics.jung.graph.Graph;
-import edu.uci.ics.jung.graph.util.Pair;
-import edu.uci.ics.jung.visualization.BasicVisualizationServer;
-import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
-import gov.anl.cue.sdga.engine.Util;
+package gov.anl.cue.arcane.engine.matrix;
 
 import java.awt.Dimension;
 import java.awt.HeadlessException;
@@ -102,6 +93,15 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.jscience.economics.money.Currency;
 import org.jscience.physics.amount.Amount;
+
+import edu.uci.ics.jung.algorithms.layout.CircleLayout;
+import edu.uci.ics.jung.algorithms.layout.Layout;
+import edu.uci.ics.jung.graph.DirectedSparseMultigraph;
+import edu.uci.ics.jung.graph.Graph;
+import edu.uci.ics.jung.graph.util.Pair;
+import edu.uci.ics.jung.visualization.BasicVisualizationServer;
+import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
+import gov.anl.cue.arcane.engine.Util;
 
 /**
  * The MatrixModel class supports the MatrixEngine class by

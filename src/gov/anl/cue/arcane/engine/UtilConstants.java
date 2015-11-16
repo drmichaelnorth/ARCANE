@@ -43,29 +43,23 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine.matrix;
+package gov.anl.cue.arcane.engine;
 
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
 /**
- * The MatrixModelConstants class supports the MatrixModel class
+ * The UtilConstants class supports the Util class
  * by providing externally stored string constants.
  */
-public class MatrixModelConstants {
+public class UtilConstants {
 	
 	/** The Constant BUNDLE_NAME. */
-	private static final String BUNDLE_NAME = "gov.anl.cue.sdga.engine.matrix.MatrixModelConstants";
+	private static final String BUNDLE_NAME = "gov.anl.cue.arcane.engine.UtilConstants";
 
 	/** The Constant RESOURCE_BUNDLE. */
 	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle
 			.getBundle(BUNDLE_NAME);
-
-	/**
-	 * Instantiates a new matrix model string constants class.
-	 */
-	public MatrixModelConstants() {
-	}
 
 	/**
 	 * Gets the string.
@@ -74,7 +68,7 @@ public class MatrixModelConstants {
 	 * @return the string
 	 */
 	public static String getString(String key) {
-
+		
 		// Attempt to find the requested key.
 		try {
 			

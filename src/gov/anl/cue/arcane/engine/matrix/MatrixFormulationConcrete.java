@@ -43,7 +43,7 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine.matrix;
+package gov.anl.cue.arcane.engine.matrix;
 
 /**
  * The MatrixFormulationConcrete class provides the
@@ -155,7 +155,7 @@ public class MatrixFormulationConcrete extends MatrixFormulationAbstract {
 	}
 
 	/* (non-Javadoc)
-	 * @see gov.anl.cue.sdga.engine.matrix.MatrixFormulationAbstract#knit()
+	 * @see gov.anl.cue.arcane.engine.matrix.MatrixFormulationAbstract#knit()
 	 */
 	@Override
 	public void knit() {
@@ -179,7 +179,7 @@ public class MatrixFormulationConcrete extends MatrixFormulationAbstract {
 	}
 
 	/* (non-Javadoc)
-	 * @see gov.anl.cue.sdga.engine.matrix.MatrixFormulationAbstract#split()
+	 * @see gov.anl.cue.arcane.engine.matrix.MatrixFormulationAbstract#split()
 	 */
 	@Override
 	public void split() {
@@ -202,7 +202,7 @@ public class MatrixFormulationConcrete extends MatrixFormulationAbstract {
 	}
 
 	/* (non-Javadoc)
-	 * @see gov.anl.cue.sdga.engine.matrix.MatrixFormulationAbstract#calculateFitnessValue()
+	 * @see gov.anl.cue.arcane.engine.matrix.MatrixFormulationAbstract#calculateFitnessValue()
 	 */
 	public Double calculateFitnessValue() {
 

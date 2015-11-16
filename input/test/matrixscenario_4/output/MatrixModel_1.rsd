@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://repast.sf.net/systemdynamics" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">"
-    <SystemModel xmi:id="__VZtwGkfEeSjsq7j1gAbXg" endTime="101" timeStep="0.5" units="" reportingInterval="1.0" className="MatrixFormulationRSD" package="gov.anl.cue.sdga.engine.matrix">
+    <SystemModel xmi:id="__VZtwGkfEeSjsq7j1gAbXg" endTime="101" timeStep="0.5" units="" reportingInterval="1.0" className="MatrixFormulationRSD" package="gov.anl.cue.arcane.engine.matrix">
       <variables xmi:type="Variable" xmi:id="a_Converter1" uuid="a_Converter1" name="a_Converter1" type="auxiliary" equation="(0.5 * a_Converter1 + 0.25 * a_Converter2 + 1.0 * a_Source1 + 1.0 * a_Source2) + (0.5 * b_Converter1 + 0.25 * b_Converter2 + 1.0 * b_Source1 + 0.5 * b_Sink1)" lhs="a_Converter1"/>
       <variables xmi:type="Stock" xmi:id="a_Converter2" uuid="a_Converter2" name="a_Converter2" lhs="a_Converter2" type="stock" comment="a_Converter2" units="" equation="(0.5 * a_Converter1 + 0.5 * a_Sink1) + (0.5 * b_Converter1 + 0.5 * b_Source2)" initialValue="12.4"/>
       <variables xmi:type="Variable" xmi:id="a_Sink1" uuid="a_Sink1" name="a_Sink1" type="auxiliary" equation="(0.25 * a_Converter2) + (0.25 * b_Converter2) + (0.5 * c_Source1 + 0.25 * c_Source2 + 0.5 * c_Sink1)" lhs="a_Sink1"/>

@@ -43,11 +43,16 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine.matrix;
+package gov.anl.cue.arcane.engine.matrix;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import gov.anl.cue.arcane.engine.matrix.MatrixEngine;
+import gov.anl.cue.arcane.engine.matrix.MatrixFormulationAbstract;
+import gov.anl.cue.arcane.engine.matrix.MatrixFormulationConcrete;
+import gov.anl.cue.arcane.engine.matrix.MatrixModel;
 
 /**
  * The MatrixFormulationTest class is used to test the MatrixFormulation class.

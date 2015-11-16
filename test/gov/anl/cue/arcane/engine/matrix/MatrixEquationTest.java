@@ -43,10 +43,12 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine.matrix;
+package gov.anl.cue.arcane.engine.matrix;
 
-import gov.anl.cue.sdga.engine.UtilTest;
-import gov.anl.cue.sdga.engine.matrix.MatrixEquation.EQUATION_TYPE;
+import gov.anl.cue.arcane.engine.UtilTest;
+import gov.anl.cue.arcane.engine.matrix.MatrixEngine;
+import gov.anl.cue.arcane.engine.matrix.MatrixEquation;
+import gov.anl.cue.arcane.engine.matrix.MatrixEquation.EQUATION_TYPE;
 
 import org.jscience.physics.amount.Amount;
 import org.junit.Assert;

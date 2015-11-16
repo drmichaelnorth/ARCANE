@@ -43,7 +43,7 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine.matrix;
+package gov.anl.cue.arcane.engine.matrix;
 
 
 /**

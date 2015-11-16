@@ -43,54 +43,45 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine.matrix;
+package gov.anl.cue.arcane.engine.matrix;
 
-import org.junit.Assert;
-import org.junit.Test;
+import java.util.ArrayList;
+
+import org.apache.commons.math3.linear.RealMatrix;
+import org.jscience.physics.amount.Amount;
+
+import gov.anl.cue.arcane.engine.Util;
 
 /**
- * The MatrixEngineConstantsTest class is used to test the MatrixEngineConstants class.
+ * The MatrixVariable class contains the equations for each variable
+ * and node as well as a two dimensional array of coefficients. Double.NaN
+ * means that a connection is not allowed.
  */
-public class MatrixEngineConstantsTest {
+public class MatrixVariable {
 
-	/**
-	 * Instantiates a new matrix engine constants test class.
-	 */
-	public MatrixEngineConstantsTest() {
-	}
+	/** The matrix. */
+	public RealMatrix coefficients = null;
 
-	/**
-	 * Test matrix engine constants.
-	 */
-	@Test
-	public void testMatrixEngineConstants() {
-		
-		// Run a test.
-		Assert.assertNotNull(new MatrixEngineConstants());
+	/** The equations. */
+	public ArrayList<String> equations = new ArrayList<String>();
 
-	}
-
-	/**
-	 * Test get a regular string.
-	 */
-	@Test
-	public void testGetStringRegular() {
-
-		// Test a request for an existing string.
-		Assert.assertTrue(MatrixEngineConstants.getString("MatrixEngine.0")
-				.equals("MatrixEngine.xlsx"));
-
-	}
+	/** The variable. */
+	public String name = null;
 	
-	/**
-	 * Test get an invalid string.
-	 */
-	@Test
-	public void testGetStringInvalid() {
+	/** The units. **/
+	@SuppressWarnings("rawtypes")
+	public Amount units = Amount.ONE;
 
-		// Test a request for an nonexistent string.
-		Assert.assertTrue(MatrixEngineConstants.getString("ABC")
-				.equals("!ABC!"));
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.util.AbstractCollection#toString()
+	 */
+	@Override
+	public String toString() {
+
+		// Return the results.
+		return Util.XSTREAM_DRIVER.toXML(this);
 
 	}
 

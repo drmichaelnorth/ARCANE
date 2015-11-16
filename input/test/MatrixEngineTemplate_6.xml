@@ -1,4 +1,4 @@
-<gov.anl.cue.sdga.engine.matrix.MatrixEngine>
+<gov.anl.cue.arcane.engine.matrix.MatrixEngine>
   <mutationProbabilityForCells>0.1</mutationProbabilityForCells>
   <killFraction>0.5</killFraction>
   <crossoverProbability>0.5</crossoverProbability>
@@ -17,14 +17,14 @@
         <size>1</size>
       </default>
       <int>1</int>
-      <gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+      <gov.anl.cue.arcane.engine.matrix.MatrixModel serialization="custom">
         <unserializable-parents/>
         <list>
           <default>
             <size>3</size>
           </default>
           <int>3</int>
-          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.arcane.engine.matrix.MatrixVariable>
             <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
               <data>
                 <double-array>
@@ -81,8 +81,8 @@
                 <__symbol>kg</__symbol>
               </__unit>
             </units>
-          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
-          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          </gov.anl.cue.arcane.engine.matrix.MatrixVariable>
+          <gov.anl.cue.arcane.engine.matrix.MatrixVariable>
             <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
               <data>
                 <double-array>
@@ -135,10 +135,10 @@
               <__exactValue>0</__exactValue>
               <__minimum>0.9999999999999999</__minimum>
               <__maximum>1.0</__maximum>
-              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../gov.anl.cue.arcane.engine.matrix.MatrixVariable/units/__unit"/>
             </units>
-          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
-          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          </gov.anl.cue.arcane.engine.matrix.MatrixVariable>
+          <gov.anl.cue.arcane.engine.matrix.MatrixVariable>
             <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
               <data>
                 <double-array>
@@ -196,9 +196,9 @@
                 <__hashCode>0</__hashCode>
               </__unit>
             </units>
-          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          </gov.anl.cue.arcane.engine.matrix.MatrixVariable>
         </list>
-        <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+        <gov.anl.cue.arcane.engine.matrix.MatrixModel>
           <default>
             <equationEvolution>true</equationEvolution>
             <stepCount>101</stepCount>
@@ -219,8 +219,8 @@
             </nodeNames>
             <stepSize>0.5</stepSize>
           </default>
-        </gov.anl.cue.sdga.engine.matrix.MatrixModel>
-      </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+        </gov.anl.cue.arcane.engine.matrix.MatrixModel>
+      </gov.anl.cue.arcane.engine.matrix.MatrixModel>
     </list>
   </inputPopulation>
   <outputPopulation serialization="custom">
@@ -230,14 +230,14 @@
         <size>1</size>
       </default>
       <int>1</int>
-      <gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+      <gov.anl.cue.arcane.engine.matrix.MatrixModel serialization="custom">
         <unserializable-parents/>
         <list>
           <default>
             <size>3</size>
           </default>
           <int>3</int>
-          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          <gov.anl.cue.arcane.engine.matrix.MatrixVariable>
             <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
               <data>
                 <double-array>
@@ -290,10 +290,10 @@
               <__exactValue>0</__exactValue>
               <__minimum>0.9999999999999999</__minimum>
               <__maximum>1.0</__maximum>
-              <__unit class="javax.measure.unit.BaseUnit" reference="../../../../../../../inputPopulation/list/gov.anl.cue.sdga.engine.matrix.MatrixModel/list/gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../../../../../inputPopulation/list/gov.anl.cue.arcane.engine.matrix.MatrixModel/list/gov.anl.cue.arcane.engine.matrix.MatrixVariable/units/__unit"/>
             </units>
-          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
-          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          </gov.anl.cue.arcane.engine.matrix.MatrixVariable>
+          <gov.anl.cue.arcane.engine.matrix.MatrixVariable>
             <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
               <data>
                 <double-array>
@@ -346,10 +346,10 @@
               <__exactValue>0</__exactValue>
               <__minimum>0.9999999999999999</__minimum>
               <__maximum>1.0</__maximum>
-              <__unit class="javax.measure.unit.BaseUnit" reference="../../../../../../../inputPopulation/list/gov.anl.cue.sdga.engine.matrix.MatrixModel/list/gov.anl.cue.sdga.engine.matrix.MatrixVariable/units/__unit"/>
+              <__unit class="javax.measure.unit.BaseUnit" reference="../../../../../../../inputPopulation/list/gov.anl.cue.arcane.engine.matrix.MatrixModel/list/gov.anl.cue.arcane.engine.matrix.MatrixVariable/units/__unit"/>
             </units>
-          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
-          <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+          </gov.anl.cue.arcane.engine.matrix.MatrixVariable>
+          <gov.anl.cue.arcane.engine.matrix.MatrixVariable>
             <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
               <data>
                 <double-array>
@@ -397,10 +397,10 @@
               <string>c</string>
             </equations>
             <name>c</name>
-            <units reference="../../../../../../inputPopulation/list/gov.anl.cue.sdga.engine.matrix.MatrixModel/list/gov.anl.cue.sdga.engine.matrix.MatrixVariable[3]/units"/>
-          </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+            <units reference="../../../../../../inputPopulation/list/gov.anl.cue.arcane.engine.matrix.MatrixModel/list/gov.anl.cue.arcane.engine.matrix.MatrixVariable[3]/units"/>
+          </gov.anl.cue.arcane.engine.matrix.MatrixVariable>
         </list>
-        <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+        <gov.anl.cue.arcane.engine.matrix.MatrixModel>
           <default>
             <equationEvolution>true</equationEvolution>
             <stepCount>101</stepCount>
@@ -421,8 +421,8 @@
             </nodeNames>
             <stepSize>0.5</stepSize>
           </default>
-        </gov.anl.cue.sdga.engine.matrix.MatrixModel>
-      </gov.anl.cue.sdga.engine.matrix.MatrixModel>
+        </gov.anl.cue.arcane.engine.matrix.MatrixModel>
+      </gov.anl.cue.arcane.engine.matrix.MatrixModel>
     </list>
   </outputPopulation>
-</gov.anl.cue.sdga.engine.matrix.MatrixEngine>
+</gov.anl.cue.arcane.engine.matrix.MatrixEngine>

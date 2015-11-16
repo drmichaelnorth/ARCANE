@@ -43,46 +43,52 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine.matrix;
+package gov.anl.cue.arcane.engine.matrix;
 
-import gov.anl.cue.sdga.engine.Util;
-
-import java.util.ArrayList;
-
-import org.apache.commons.math3.linear.RealMatrix;
-import org.jscience.physics.amount.Amount;
+import java.util.MissingResourceException;
+import java.util.ResourceBundle;
 
 /**
- * The MatrixVariable class contains the equations for each variable
- * and node as well as a two dimensional array of coefficients. Double.NaN
- * means that a connection is not allowed.
+ * The MatrixEngineConstants class supports the MatrixEngine class
+ * by providing externally stored string constants.
  */
-public class MatrixVariable {
-
-	/** The matrix. */
-	public RealMatrix coefficients = null;
-
-	/** The equations. */
-	public ArrayList<String> equations = new ArrayList<String>();
-
-	/** The variable. */
-	public String name = null;
+public class MatrixEngineConstants {
 	
-	/** The units. **/
-	@SuppressWarnings("rawtypes")
-	public Amount units = Amount.ONE;
+	/** The Constant BUNDLE_NAME. */
+	private static final String BUNDLE_NAME = "gov.anl.cue.arcane.engine.matrix.MatrixEngineConstants";
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.util.AbstractCollection#toString()
+	/** The Constant RESOURCE_BUNDLE. */
+	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle
+			.getBundle(BUNDLE_NAME);
+
+	/**
+	 * Instantiates a new matrix engine string constants class.
 	 */
-	@Override
-	public String toString() {
-
-		// Return the results.
-		return Util.XSTREAM_DRIVER.toXML(this);
-
+	public MatrixEngineConstants() {
 	}
 
+	/**
+	 * Gets the string.
+	 *
+	 * @param key the key
+	 * @return the string
+	 */
+	public static String getString(String key) {
+
+		// Attempt to find the requested key.
+		try {
+			
+			// Attempt to find the requested value.
+			return RESOURCE_BUNDLE.getString(key);
+			
+		// Catch errors.
+		} catch (MissingResourceException e) {
+			
+			// Note an error.
+			return '!' + key + '!';
+			
+		}
+		
+	}
+	
 }

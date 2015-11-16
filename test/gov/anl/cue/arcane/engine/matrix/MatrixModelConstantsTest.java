@@ -43,53 +43,55 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine;
+package gov.anl.cue.arcane.engine.matrix;
 
 import org.junit.Assert;
 import org.junit.Test;
 
+import gov.anl.cue.arcane.engine.matrix.MatrixModelConstants;
+
 /**
- * The UtilConstantsTest class is used to test the UtilConstants class.
+ * The MatrixModelConstantsTest class is used to test the MatrixModelConstants class.
  */
-public class UtilConstantsTest {
+public class MatrixModelConstantsTest {
 
 	/**
-	 * Instantiates a new util constants test.
+	 * Instantiates a new matrix model constants test class.
 	 */
-	public UtilConstantsTest() {
+	public MatrixModelConstantsTest() {
 	}
 
 	/**
-	 * Test the constructor.
+	 * Test matrix model constants.
 	 */
 	@Test
-	public void testUtilConstants() {
+	public void testMatrixModelConstants() {
 		
 		// Run a test.
-		Assert.assertNotNull(new UtilConstants());
+		Assert.assertNotNull(new MatrixModelConstants());
 
 	}
 
 	/**
-	 * Test get string regular.
+	 * Test get a regular string.
 	 */
 	@Test
 	public void testGetStringRegular() {
 
 		// Test a request for an existing string.
-		Assert.assertTrue(UtilConstants.getString("Util.0")
-				.equals("src-gen"));
+		Assert.assertTrue(MatrixModelConstants.getString("MatrixModel.0")
+				.equals("MatrixFormulationAbstract"));
 
 	}
 	
 	/**
-	 * Test get string invalid.
+	 * Test get an invalid string.
 	 */
 	@Test
-	public void testGetString() {
+	public void testGetStringInvalid() {
 
 		// Test a request for an nonexistent string.
-		Assert.assertTrue(UtilConstants.getString("ABC")
+		Assert.assertTrue(MatrixModelConstants.getString("ABC")
 				.equals("!ABC!"));
 
 	}

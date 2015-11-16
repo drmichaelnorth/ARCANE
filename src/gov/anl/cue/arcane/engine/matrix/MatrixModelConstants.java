@@ -43,28 +43,28 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine.matrix;
+package gov.anl.cue.arcane.engine.matrix;
 
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
 /**
- * The MatrixEngineConstants class supports the MatrixEngine class
+ * The MatrixModelConstants class supports the MatrixModel class
  * by providing externally stored string constants.
  */
-public class MatrixEngineConstants {
+public class MatrixModelConstants {
 	
 	/** The Constant BUNDLE_NAME. */
-	private static final String BUNDLE_NAME = "gov.anl.cue.sdga.engine.matrix.MatrixEngineConstants";
+	private static final String BUNDLE_NAME = "gov.anl.cue.arcane.engine.matrix.MatrixModelConstants";
 
 	/** The Constant RESOURCE_BUNDLE. */
 	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle
 			.getBundle(BUNDLE_NAME);
 
 	/**
-	 * Instantiates a new matrix engine string constants class.
+	 * Instantiates a new matrix model string constants class.
 	 */
-	public MatrixEngineConstants() {
+	public MatrixModelConstants() {
 	}
 
 	/**

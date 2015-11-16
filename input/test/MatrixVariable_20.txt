@@ -1,4 +1,4 @@
-<gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+<gov.anl.cue.arcane.engine.matrix.MatrixVariable>
   <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
     <data>
       <double-array>
@@ -55,4 +55,4 @@
       <__symbol>kg</__symbol>
     </__unit>
   </units>
-</gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+</gov.anl.cue.arcane.engine.matrix.MatrixVariable>

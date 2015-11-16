@@ -43,7 +43,7 @@
  * @version 1.0
  * 
 */
-package gov.anl.cue.sdga.engine;
+package gov.anl.cue.arcane.engine;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -57,6 +57,8 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
 import org.junit.Test;
+
+import gov.anl.cue.arcane.engine.Util;
 
 /**
  * The UtilTest class is used to test the Util class.
@@ -285,13 +287,13 @@ public class UtilTest {
 	}
 
 	/**
-	 * Test writing and reading sdga engine input.
+	 * Test writing and reading arcane engine input.
 	 *
 	 * @throws IOException
 	 *             Signals that an I/O exception has occurred.
 	 */
 	@Test
-	public void testWritingAndReadingSDGAEngineInput() throws IOException {
+	public void testWritingAndReadingarcaneEngineInput() throws IOException {
 
 		// Run a test.
 		String testObject = new String();

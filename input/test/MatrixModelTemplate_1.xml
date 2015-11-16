@@ -1,11 +1,11 @@
-<gov.anl.cue.sdga.engine.matrix.MatrixModel serialization="custom">
+<gov.anl.cue.arcane.engine.matrix.MatrixModel serialization="custom">
   <unserializable-parents/>
   <list>
     <default>
       <size>3</size>
     </default>
     <int>3</int>
-    <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+    <gov.anl.cue.arcane.engine.matrix.MatrixVariable>
       <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
         <data>
           <double-array>
@@ -41,8 +41,8 @@
           <__hashCode>0</__hashCode>
         </__unit>
       </units>
-    </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
-    <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+    </gov.anl.cue.arcane.engine.matrix.MatrixVariable>
+    <gov.anl.cue.arcane.engine.matrix.MatrixVariable>
       <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
         <data>
           <double-array>
@@ -68,9 +68,9 @@
         <string>c</string>
       </equations>
       <name>b</name>
-      <units reference="../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units"/>
-    </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
-    <gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+      <units reference="../../gov.anl.cue.arcane.engine.matrix.MatrixVariable/units"/>
+    </gov.anl.cue.arcane.engine.matrix.MatrixVariable>
+    <gov.anl.cue.arcane.engine.matrix.MatrixVariable>
       <coefficients class="org.apache.commons.math3.linear.Array2DRowRealMatrix">
         <data>
           <double-array>
@@ -96,10 +96,10 @@
         <string>c</string>
       </equations>
       <name>c</name>
-      <units reference="../../gov.anl.cue.sdga.engine.matrix.MatrixVariable/units"/>
-    </gov.anl.cue.sdga.engine.matrix.MatrixVariable>
+      <units reference="../../gov.anl.cue.arcane.engine.matrix.MatrixVariable/units"/>
+    </gov.anl.cue.arcane.engine.matrix.MatrixVariable>
   </list>
-  <gov.anl.cue.sdga.engine.matrix.MatrixModel>
+  <gov.anl.cue.arcane.engine.matrix.MatrixModel>
     <default>
       <equationEvolution>false</equationEvolution>
       <stepCount>10</stepCount>
@@ -117,5 +117,5 @@
       </nodeNames>
       <stepSize>1.0</stepSize>
     </default>
-  </gov.anl.cue.sdga.engine.matrix.MatrixModel>
-</gov.anl.cue.sdga.engine.matrix.MatrixModel>
+  </gov.anl.cue.arcane.engine.matrix.MatrixModel>
+</gov.anl.cue.arcane.engine.matrix.MatrixModel>
