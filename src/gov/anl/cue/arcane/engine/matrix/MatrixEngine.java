@@ -52,6 +52,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.util.Iterator;
 
 import org.apache.commons.io.FileUtils;
@@ -86,7 +87,10 @@ import gov.anl.cue.arcane.engine.Util;
  * MatrixEngineTest.testExportSolids(). An example showing how to export Repast.SD
  * XML files can be found in MatrixEngineTest.testExportRepastSDs().
  */
-public class MatrixEngine {
+public class MatrixEngine implements Serializable {
+
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = -5929920694261593355L;
 
 	/** The mutation probability for cells. */
 	public double mutationProbabilityForCells = 0.1;

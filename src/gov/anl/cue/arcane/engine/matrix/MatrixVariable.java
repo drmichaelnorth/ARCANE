@@ -45,6 +45,7 @@
 */
 package gov.anl.cue.arcane.engine.matrix;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import org.apache.commons.math3.linear.RealMatrix;
@@ -57,7 +58,7 @@ import gov.anl.cue.arcane.engine.Util;
  * and node as well as a two dimensional array of coefficients. Double.NaN
  * means that a connection is not allowed.
  */
-public class MatrixVariable {
+public class MatrixVariable implements Serializable {
 
 	/** The matrix. */
 	public RealMatrix coefficients = null;
@@ -72,6 +73,9 @@ public class MatrixVariable {
 	@SuppressWarnings("rawtypes")
 	public Amount units = Amount.ONE;
 
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = 1L;
+	
 	/*
 	 * (non-Javadoc)
 	 * 

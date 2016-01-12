@@ -45,6 +45,7 @@
 */
 package gov.anl.cue.arcane.engine.matrix;
 
+import java.io.Serializable;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
@@ -52,8 +53,11 @@ import java.util.ResourceBundle;
  * The MatrixEngineConstants class supports the MatrixEngine class
  * by providing externally stored string constants.
  */
-public class MatrixEngineConstants {
+public class MatrixEngineConstants implements Serializable {
 	
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = -8995252448214050025L;
+
 	/** The Constant BUNDLE_NAME. */
 	private static final String BUNDLE_NAME = "gov.anl.cue.arcane.engine.matrix.MatrixEngineConstants";
 

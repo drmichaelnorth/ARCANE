@@ -56,6 +56,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.net.URL;
@@ -112,7 +113,7 @@ import gov.anl.cue.arcane.engine.Util;
  * influence links are also called variables, and flows are also
  * called rates.
  */
-public class MatrixModel extends ArrayList<MatrixVariable> {
+public class MatrixModel extends ArrayList<MatrixVariable> implements Serializable {
 
 	/** The JScience initializer. */
 	static {

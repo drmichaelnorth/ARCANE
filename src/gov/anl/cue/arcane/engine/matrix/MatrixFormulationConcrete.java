@@ -45,6 +45,8 @@
 */
 package gov.anl.cue.arcane.engine.matrix;
 
+import java.io.Serializable;
+
 /**
  * The MatrixFormulationConcrete class provides the
  * specific methods for evaluating a system dynamics model.
@@ -53,7 +55,11 @@ package gov.anl.cue.arcane.engine.matrix;
  * that is used to demonstrate and test the functions of this 
  * automatically generated class.
  */
-public class MatrixFormulationConcrete extends MatrixFormulationAbstract {
+public class MatrixFormulationConcrete extends MatrixFormulationAbstract
+	implements Serializable {
+
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = -3272711829386440220L;
 
 	/** The a_ converter1. */
 	double a_Converter1 = 2.0;

@@ -45,6 +45,7 @@
 */
 package gov.anl.cue.arcane.engine.matrix;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import org.jscience.physics.amount.Amount;
@@ -52,8 +53,11 @@ import org.jscience.physics.amount.Amount;
 /**
  * The Class matrixEquation.
  */
-class MatrixEquation {
+class MatrixEquation implements Serializable {
 	
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = -2159040559721129247L;
+
 	/** The matrix model. */
 	public MatrixModel matrixModel = null;
 	

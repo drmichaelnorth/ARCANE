@@ -48,6 +48,7 @@ package gov.anl.cue.arcane.engine.matrix;
 import java.beans.Transient;
 import java.io.File;
 import java.io.FilenameFilter;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -60,7 +61,7 @@ import gov.anl.cue.arcane.engine.Util;
  * fitness value, with the highest value first (i.e., item zero)
  * in the list.
  */
-public class MatrixPopulation extends ArrayList<MatrixModel> {
+public class MatrixPopulation extends ArrayList<MatrixModel> implements Serializable {
 
 	/** The matrix engine. */
 	public transient MatrixEngine matrixEngine = null;

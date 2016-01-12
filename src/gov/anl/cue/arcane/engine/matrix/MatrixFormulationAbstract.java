@@ -45,12 +45,16 @@
 */
 package gov.anl.cue.arcane.engine.matrix;
 
+import java.io.Serializable;
 
 /**
  * The MatrixFormulationAbstract class provides the
  * base methods for evaluating system dynamics models.
  */
-public abstract class MatrixFormulationAbstract {
+public abstract class MatrixFormulationAbstract implements Serializable {
+
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = -2677424125454304383L;
 
 	/**
 	 * Instantiates a new matrix formulation.

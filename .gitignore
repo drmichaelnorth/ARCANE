@@ -1,6 +1,7 @@
 .classpath
 .gitignore
 .project
+arcane*.jar
 bin/
 doc/
 launchers/
