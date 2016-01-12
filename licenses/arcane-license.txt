@@ -1,5 +1,5 @@
 /*
- * Copyright © 2015, UChicago Argonne, LLC
+ * Copyright © 2016, UChicago Argonne, LLC
  * All Rights Reserved
  * ARCANE (ANL-SF-15-108)
  * Michael J. North, Argonne National Laboratory
@@ -40,6 +40,6 @@
  ******************************************************************************
  *
  * @author Michael J. North
- * @version 1.0
+ * @version 1.1
  *
 */
