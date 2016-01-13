@@ -612,10 +612,6 @@ public class MatrixEngine implements Serializable {
 		// Complete the requested number of evolutionary runs.
 		for (int run = 1; run <= gaRuns; run++) {
 			
-			// Note the progress.
-			System.out.println(
-				"Working on GA run " + run + ":");
-	
 			// Reset between stochastic runs.
 			this.reset();
 			
@@ -626,11 +622,6 @@ public class MatrixEngine implements Serializable {
 			for (int step = 1; step <= gaStepsPerIterate;
 					step++) {
 				
-				// Note the progress.
-				System.out.println(
-					"    Working on GA step " + step +
-					" of run " + run + ".");
-
 				// Evolve the population.
 				this.evolve(1);
 				
