@@ -134,7 +134,7 @@ public class MatrixEngine implements Serializable {
 	 *
 	 * @param args the arguments
 	 */
-	public void main(String[] args) {
+	public static void main(String[] args) {
 
 		// Print a simple help message.
 		System.out.println(
