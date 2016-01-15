@@ -1,10 +1,5 @@
-.classpath
-.gitignore
-.project
-arcane*.jar
 bin/
 doc/
 lib/
 output/
-scenarios/
 temp/
