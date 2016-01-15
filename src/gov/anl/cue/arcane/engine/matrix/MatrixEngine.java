@@ -128,6 +128,20 @@ public class MatrixEngine implements Serializable {
 	/** The random generator. */
 	public transient RandomDataGenerator RANDOM_GENERATOR = null;
 	
+	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
+	public void main(String[] args) {
+
+		// Print a simple help message.
+		System.out.println(
+				"ARCANE: Please see the README.md file for more information.");
+		
+	}
+	
 	/**
 	 * Gets the random number generator.
 	 *
