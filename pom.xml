@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>arcane</groupId>
   <artifactId>arcane</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.1.0</version>
   <name>ARCANE</name>
   <description>AnticipatoRy Complex Adaptive Network Extrapolation (ARCANE) is a Java-based genetic algorithm system for automatically generating system dynamics models that differ in both their embedded parameters and their fundamental equations while maintaining dimensional consistency. It is intended to be used for anticipatory modeling of systems such as complex networks. </description>
   <build>
@@ -241,7 +241,7 @@
   	</dependency>
   </dependencies>
   <organization>
-  	<name>Michael</name>
+  	<name>Michael North</name>
   	<url>http://drmichaelnorth.github.io/ARCANE/</url>
   </organization>
   <scm>
