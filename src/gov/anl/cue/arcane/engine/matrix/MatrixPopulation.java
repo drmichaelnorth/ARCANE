@@ -106,7 +106,6 @@ public class MatrixPopulation extends ArrayList<MatrixModel> implements Serializ
 		 * 
 		 * @see java.io.FilenameFilter#accept(java.io.File, java.lang.String)
 		 */
-		@Override
 		public boolean accept(File directory, String fileName) {
 			
 			// Check the input.
@@ -191,7 +190,6 @@ public class MatrixPopulation extends ArrayList<MatrixModel> implements Serializ
 		// Sort the updated matrix models list in the order of decreasing
 		// fitness.
 		Collections.sort(this, new Comparator<MatrixModel>() {
-			@Override
 			public int compare(MatrixModel left, MatrixModel right) {
 				if (left.getFitnessValue() < right.getFitnessValue()) {
 					return 1;

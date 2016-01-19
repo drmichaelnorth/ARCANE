@@ -1396,7 +1396,6 @@ public class MatrixModel extends ArrayList<MatrixVariable> implements Serializab
 			.setEdgeLabelTransformer(new ToStringLabeller<String>());
 		visualizationServer.getRenderContext().setEdgeLabelTransformer(
 			new Transformer<String, String>() {
-				@Override
 				public String transform(String string) {
 					return StringUtils.substringBefore(string, "(");
 				}
