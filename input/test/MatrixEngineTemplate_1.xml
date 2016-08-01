@@ -195,7 +195,7 @@
               <string>SIN(a)</string>
               <string>c</string>
             </fitnessEquations>
-            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessFunctionType>USER_EQUATION</fitnessFunctionType>
             <nodeNames>
               <string>Converter1</string>
               <string>Converter2</string>
@@ -385,7 +385,7 @@
               <string>SIN(a)</string>
               <string>c</string>
             </fitnessEquations>
-            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessFunctionType>USER_EQUATION</fitnessFunctionType>
             <nodeNames>
               <string>Converter1</string>
               <string>Converter2</string>

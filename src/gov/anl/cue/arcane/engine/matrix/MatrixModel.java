@@ -115,7 +115,7 @@ import gov.anl.cue.arcane.engine.Util;
  */
 public class MatrixModel extends ArrayList<MatrixVariable> implements Serializable {
 
-	/** The JScience initializer. */
+	/** The environment initializer. */
 	static {
 		
 		// Pre-load the JScience units classes to
@@ -281,7 +281,7 @@ public class MatrixModel extends ArrayList<MatrixVariable> implements Serializab
 			// Store the fitness function specifier.
 			matrixModel.fitnessFunctionType =
 					MatrixModel.FITNESS_FUNCTION_TYPE
-					.SYSTEM_DYNAMICS;
+					.USER_EQUATION;
 			
 			// Read the number of steps.
 			matrixModel.stepCount = (int) Util
@@ -731,7 +731,7 @@ public class MatrixModel extends ArrayList<MatrixVariable> implements Serializab
 			// Store the fitness function specifier.
 			matrixModel.fitnessFunctionType =
 					MatrixModel.FITNESS_FUNCTION_TYPE
-					.SYSTEM_DYNAMICS;
+					.USER_EQUATION;
 			
 			// Read the number of steps.
 			matrixModel.stepCount = (int) Util
@@ -905,11 +905,11 @@ public class MatrixModel extends ArrayList<MatrixVariable> implements Serializab
 			// Calculate the simple maximum fitness function.
 			fitnessAccumulator = simpleMaximumFitnessFunction();
 	
-		// System dynamics fitness functions are requested.
+		// User-specified fitness functions are requested.
 		} else {
 				
-			// Calculate the Repast system dynamics fitness function.
-			fitnessAccumulator = systemDynamicsFitnessFunction();
+			// Calculate the user equation fitness function.
+			fitnessAccumulator = userEquationFitnessFunction();
 
 		}
 
@@ -919,11 +919,11 @@ public class MatrixModel extends ArrayList<MatrixVariable> implements Serializab
 	}
 	
 	/**
-	 * The system dynamics fitness function.
+	 * The user-specified fitness function.
 	 *
 	 * @return the double
 	 */
-	public double systemDynamicsFitnessFunction() {
+	public double userEquationFitnessFunction() {
 		
 		// Evaluate the equations.
 		Set<String> knit = this.knit(MatrixModel.NO_SUFFIX, MatrixModel.COMBINED_SUFFIX);
@@ -1206,6 +1206,10 @@ public class MatrixModel extends ArrayList<MatrixVariable> implements Serializab
 	public void formulateJava(Set<String> declarations, Set<String> knit,
 			Set<String> split, String fitness) throws FileNotFoundException {
 		
+		// Create the folders, if needed.
+		File folders = new File(Util.TEMP_DIR + "//" + MatrixModel.PACKAGE_PATH);
+		folders.mkdirs();		
+		
 		// Attempt to create a new print writer.
 		PrintWriter writer = new PrintWriter(new File(Util.TEMP_DIR + "//" +
 				MatrixModel.PACKAGE_PATH +
@@ -1403,7 +1407,7 @@ public class MatrixModel extends ArrayList<MatrixVariable> implements Serializab
 		);
 		
 		// Setup the rendering frame.
-		JFrame frame = new JFrame("System Dynamics Equations Graph"); 
+		JFrame frame = new JFrame("ARCANE Graph"); 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(visualizationServer);
 		frame.pack();
@@ -1683,7 +1687,7 @@ public class MatrixModel extends ArrayList<MatrixVariable> implements Serializab
 		visualizationServer.setPreferredSize(layout.getSize());
 		
 		// Setup the rendering frame.
-		JFrame frame = new JFrame("System Dynamics Equations Graph");
+		JFrame frame = new JFrame("ARCANE Graph");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(visualizationServer);
 		frame.pack();
@@ -2604,7 +2608,7 @@ public class MatrixModel extends ArrayList<MatrixVariable> implements Serializab
 		// Select the type of fitness function.
 		if (this.getMatrixEngine().getRandomNumberFromTo(0.0, 1.0) <= 0.5) {
 			childMatrixModel.fitnessFunctionType = this.fitnessFunctionType;
-			if (this.fitnessFunctionType == MatrixModel.FITNESS_FUNCTION_TYPE.SYSTEM_DYNAMICS) {
+			if (this.fitnessFunctionType == MatrixModel.FITNESS_FUNCTION_TYPE.USER_EQUATION) {
 				childMatrixModel.stepCount = this.stepCount;
 				childMatrixModel.stepSize = this.stepSize;
 			}
@@ -3110,7 +3114,7 @@ public class MatrixModel extends ArrayList<MatrixVariable> implements Serializab
 				MatrixModel.FITNESS_FUNCTION_TYPE.SIMPLE_MAXIMUM) {
 			cell.setCellValue(MatrixModel.SIMPLE_MAXIMUM_STRING);
 		} else if (this.fitnessFunctionType ==
-				MatrixModel.FITNESS_FUNCTION_TYPE.SYSTEM_DYNAMICS) {
+				MatrixModel.FITNESS_FUNCTION_TYPE.USER_EQUATION) {
 			cell.setCellValue(MatrixModel.SYSTEM_DYNAMICS_STRING);
 		} else {
 			cell.setCellValue(MatrixModel.ZERO_FITNESS_STRING);
@@ -3122,7 +3126,7 @@ public class MatrixModel extends ArrayList<MatrixVariable> implements Serializab
 
 		// Fill in the step count and size.
 		if (this.fitnessFunctionType ==
-			MatrixModel.FITNESS_FUNCTION_TYPE.SYSTEM_DYNAMICS) {
+			MatrixModel.FITNESS_FUNCTION_TYPE.USER_EQUATION) {
 			row = sheet.createRow(fitnessEquations.size() + 2);
 			cell = row.createCell(0);
 			cell.setCellValue(MatrixModel.SYSTEM_DYNAMICS_STEP_COUNT_STRING);
@@ -3199,8 +3203,8 @@ public class MatrixModel extends ArrayList<MatrixVariable> implements Serializab
 		/** The simple maximum code. */
 		SIMPLE_MAXIMUM,
 		
-		/** The system dynamics solver code. */
-		SYSTEM_DYNAMICS
+		/** The user-specified equation solver code. */
+		USER_EQUATION
 		
 	}
 

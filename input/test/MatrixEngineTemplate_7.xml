@@ -206,7 +206,7 @@
               <string>SIN(a)</string>
               <string>c</string>
             </fitnessEquations>
-            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessFunctionType>USER_EQUATION</fitnessFunctionType>
             <nodeNames>
               <string>Converter1</string>
               <string>Converter2</string>
@@ -416,7 +416,7 @@
               <string>SIN(a)</string>
               <string>c</string>
             </fitnessEquations>
-            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessFunctionType>USER_EQUATION</fitnessFunctionType>
             <fitnessValue>9.692622671882013E61</fitnessValue>
             <nodeNames>
               <string>Converter1</string>
@@ -618,7 +618,7 @@
               <string>SIN(a)</string>
               <string>c</string>
             </fitnessEquations>
-            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessFunctionType>USER_EQUATION</fitnessFunctionType>
             <fitnessValue>3.0252816417301615E61</fitnessValue>
             <nodeNames>
               <string>Converter1</string>
@@ -820,7 +820,7 @@
               <string>SIN(a)</string>
               <string>c</string>
             </fitnessEquations>
-            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessFunctionType>USER_EQUATION</fitnessFunctionType>
             <fitnessValue>2.2929983311452293E57</fitnessValue>
             <nodeNames>
               <string>Converter1</string>
@@ -1022,7 +1022,7 @@
               <string>SIN(a)</string>
               <string>c</string>
             </fitnessEquations>
-            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessFunctionType>USER_EQUATION</fitnessFunctionType>
             <fitnessValue>5.50690679556716E53</fitnessValue>
             <nodeNames>
               <string>Converter1</string>
@@ -1224,7 +1224,7 @@
               <string>SIN(a)</string>
               <string>c</string>
             </fitnessEquations>
-            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessFunctionType>USER_EQUATION</fitnessFunctionType>
             <fitnessValue>2.7177095356982255E53</fitnessValue>
             <nodeNames>
               <string>Converter1</string>
@@ -1426,7 +1426,7 @@
               <string>SIN(a)</string>
               <string>c</string>
             </fitnessEquations>
-            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessFunctionType>USER_EQUATION</fitnessFunctionType>
             <fitnessValue>5.343517073574545E52</fitnessValue>
             <nodeNames>
               <string>Converter1</string>
@@ -1628,7 +1628,7 @@
               <string>SIN(a)</string>
               <string>c</string>
             </fitnessEquations>
-            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessFunctionType>USER_EQUATION</fitnessFunctionType>
             <fitnessValue>1.982897692080235E50</fitnessValue>
             <nodeNames>
               <string>Converter1</string>
@@ -1830,7 +1830,7 @@
               <string>SIN(a)</string>
               <string>c</string>
             </fitnessEquations>
-            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessFunctionType>USER_EQUATION</fitnessFunctionType>
             <fitnessValue>2.09951680907986E47</fitnessValue>
             <nodeNames>
               <string>Converter1</string>
@@ -2032,7 +2032,7 @@
               <string>SIN(a)</string>
               <string>c</string>
             </fitnessEquations>
-            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessFunctionType>USER_EQUATION</fitnessFunctionType>
             <fitnessValue>1.8267238059634912E42</fitnessValue>
             <nodeNames>
               <string>Converter1</string>
@@ -2234,7 +2234,7 @@
               <string>SIN(a)</string>
               <string>c</string>
             </fitnessEquations>
-            <fitnessFunctionType>SYSTEM_DYNAMICS</fitnessFunctionType>
+            <fitnessFunctionType>USER_EQUATION</fitnessFunctionType>
             <fitnessValue>1.6484559449402383E40</fitnessValue>
             <nodeNames>
               <string>Converter1</string>

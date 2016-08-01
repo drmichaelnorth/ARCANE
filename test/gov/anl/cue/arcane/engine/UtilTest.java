@@ -58,8 +58,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
 import org.junit.Test;
 
-import gov.anl.cue.arcane.engine.Util;
-
 /**
  * The UtilTest class is used to test the Util class.
  */
@@ -293,7 +291,7 @@ public class UtilTest {
 	 *             Signals that an I/O exception has occurred.
 	 */
 	@Test
-	public void testWritingAndReadingarcaneEngineInput() throws IOException {
+	public void testWritingAndReadingARCANEEngineInput() throws IOException {
 
 		// Run a test.
 		String testObject = new String();

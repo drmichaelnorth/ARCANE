@@ -128,8 +128,7 @@ public class MatrixModelTest {
 	public void testCalculateFitnessValue3() {
 		
 
-		// Read in an example matrix model using Repast
-		// system dynamics fitness for testing.
+		// Read in an example matrix model for testing.
 		MatrixModel matrixModel = MatrixModel
 				.read(matrixEngine, UtilTest.INPUT_TEST_DIR +
 						"//MatrixModel_12.xlsx");
@@ -137,7 +136,7 @@ public class MatrixModelTest {
 		// Calculate and check the fitness value.
 		//System.out.println(((double) matrixModel.calculateFitnessValue()));
 		Assert.assertEquals(matrixModel.calculateFitnessValue(),
-				(Double)2.4139874174668718E18);
+				(Double) 2.4139874174668718E18);
 
 	}
 
@@ -837,8 +836,8 @@ public class MatrixModelTest {
 
 		// Check type parsing.
 		Assert.assertEquals(
-				FITNESS_FUNCTION_TYPE.SYSTEM_DYNAMICS,
-				MatrixModel.FITNESS_FUNCTION_TYPE.valueOf("SYSTEM_DYNAMICS"));
+				FITNESS_FUNCTION_TYPE.USER_EQUATION,
+				MatrixModel.FITNESS_FUNCTION_TYPE.valueOf("USER_EQUATION"));
 		
 	}
 

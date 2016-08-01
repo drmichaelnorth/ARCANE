@@ -49,7 +49,7 @@ import java.io.Serializable;
 
 /**
  * The MatrixFormulationConcrete class provides the
- * specific methods for evaluating a system dynamics model.
+ * specific methods for evaluating a model.
  * MatrixFormulationConcrete instances are written and compiled
  * dynamically at engine run time. This instance is an example
  * that is used to demonstrate and test the functions of this 

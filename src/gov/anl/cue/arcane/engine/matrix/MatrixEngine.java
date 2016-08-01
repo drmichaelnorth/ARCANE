@@ -130,19 +130,6 @@ public class MatrixEngine implements Serializable {
 	
 	
 	/**
-	 * The main method.
-	 *
-	 * @param args the arguments
-	 */
-	public static void main(String[] args) {
-
-		// Print a simple help message.
-		System.out.println(
-				"ARCANE: Please see the README.md file for more information.");
-		
-	}
-	
-	/**
 	 * Gets the random number generator.
 	 *
 	 * @return the random number generator
@@ -614,6 +601,10 @@ public class MatrixEngine implements Serializable {
 	 */
 	public void stochasticRun(String outputDirectory,
 			int gaRuns, int gaStepsPerIterate) throws IOException {
+		
+		// Create the output folder if it is not present.
+		File outputFolder = new File(outputDirectory);
+		outputFolder.mkdirs();
 		
 		// Open the output file.
 		PrintWriter outputFile = new PrintWriter(

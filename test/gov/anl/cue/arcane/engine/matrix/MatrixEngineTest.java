@@ -45,11 +45,6 @@
 */
 package gov.anl.cue.arcane.engine.matrix;
 
-import gov.anl.cue.arcane.engine.Util;
-import gov.anl.cue.arcane.engine.UtilTest;
-import gov.anl.cue.arcane.engine.matrix.MatrixEngine;
-import gov.anl.cue.arcane.engine.matrix.MatrixModel;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -60,6 +55,9 @@ import java.nio.file.Files;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import gov.anl.cue.arcane.engine.Util;
+import gov.anl.cue.arcane.engine.UtilTest;
 
 /**
  * The MatrixEngineTest class is used to test the MatrixEngine class.
@@ -209,7 +207,7 @@ public class MatrixEngineTest {
 	 * @throws NumberFormatException the number format exception
 	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
-	//@Test
+	@Test
 	public void testEvolveTenSteps() throws NumberFormatException, IOException {
 	
 		// Read in another example matrix engine for testing.
@@ -220,8 +218,7 @@ public class MatrixEngineTest {
 		matrixEngine.evolve(10);
 
 		// Write out the results.
-		matrixEngine.write(UtilTest.INPUT_TEST_MATRIX_SCENARIO_4_DIR +
-				"//" + Util.OUTPUT_DIR);
+		matrixEngine.write(UtilTest.INPUT_TEST_MATRIX_SCENARIO_4_DIR);
 		
 		// Check the best fitness value.
 		//System.out.println(matrixEngine.outputPopulation.getFitnessValue());
@@ -640,8 +637,7 @@ public class MatrixEngineTest {
 
 		// Attempt to write out the matrix population.
 		Assert.assertTrue(matrixEngine
-				.exportRepastSDs(UtilTest.INPUT_TEST_MATRIX_SCENARIO_4_DIR +
-				"//" + Util.OUTPUT_DIR));
+				.exportRepastSDs(UtilTest.INPUT_TEST_MATRIX_SCENARIO_4_DIR));
 
 		// Compare the results.
 		Assert.assertTrue(Util.compareBinaryFiles(

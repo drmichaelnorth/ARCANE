@@ -49,7 +49,7 @@ import java.io.Serializable;
 
 /**
  * The MatrixFormulationAbstract class provides the
- * base methods for evaluating system dynamics models.
+ * base methods for evaluating models.
  */
 public abstract class MatrixFormulationAbstract implements Serializable {
 
