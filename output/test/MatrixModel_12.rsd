@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://repast.sf.net/systemdynamics" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">"
+    <SystemModel xmi:id="__VZtwGkfEeSjsq7j1gAbXg" endTime="101" timeStep="0.5" units="" reportingInterval="1.0" className="MatrixFormulationRSD" package="gov.anl.cue.arcane.engine.matrix">
+      <variables xmi:type="Variable" xmi:id="a_Converter1" uuid="a_Converter1" name="a_Converter1" type="auxiliary" equation="(0.5 * a_Converter1 + 0.25 * a_Converter2 + 1.0 * a_Source1 + 1.0 * a_Source2) + (0.5 * b_Converter1 + 0.25 * b_Converter2 + 1.0 * b_Source1 + 0.5 * b_Sink1)" lhs="a_Converter1"/>
+      <variables xmi:type="Stock" xmi:id="a_Converter2" uuid="a_Converter2" name="a_Converter2" lhs="a_Converter2" type="stock" comment="a_Converter2" units="" equation="(0.5 * a_Converter1 + 0.5 * a_Sink1) + (0.5 * b_Converter1 + 0.5 * b_Source2)" initialValue="12.4"/>
+      <variables xmi:type="Variable" xmi:id="a_Sink1" uuid="a_Sink1" name="a_Sink1" type="auxiliary" equation="(0.25 * a_Converter2) + (0.25 * b_Converter2) + (0.5 * c_Source1 + 0.25 * c_Source2 + 0.5 * c_Sink1)" lhs="a_Sink1"/>
+      <variables xmi:type="Variable" xmi:id="a_Source1" uuid="a_Source1" name="a_Source1" type="auxiliary" equation="10.4" lhs="a_Source1"/>
+      <variables xmi:type="Variable" xmi:id="a_Source2" uuid="a_Source2" name="a_Source2" type="auxiliary" equation="11.6" lhs="a_Source2"/>
+      <variables xmi:type="Variable" xmi:id="b_Converter1" uuid="b_Converter1" name="b_Converter1" type="auxiliary" equation="9.3" lhs="b_Converter1"/>
+      <variables xmi:type="Stock" xmi:id="b_Converter2" uuid="b_Converter2" name="b_Converter2" lhs="b_Converter2" type="stock" comment="b_Converter2" units="" equation="(0.5 * a_Converter1 + 0.5 * a_Sink1) + (0.5 * b_Converter1 + 0.5 * b_Source2)" initialValue="29.3"/>
+      <variables xmi:type="Variable" xmi:id="b_Sink1" uuid="b_Sink1" name="b_Sink1" type="auxiliary" equation="(0.25 * a_Converter2) + (0.25 * b_Converter2) + (0.5 * c_Source1 + 0.25 * c_Source2 + 0.5 * c_Sink1)" lhs="b_Sink1"/>
+      <variables xmi:type="Variable" xmi:id="b_Source1" uuid="b_Source1" name="b_Source1" type="auxiliary" equation="(0.5 * c_Converter2 + 0.25 * c_Source2)" lhs="b_Source1"/>
+      <variables xmi:type="Variable" xmi:id="b_Source2" uuid="b_Source2" name="b_Source2" type="auxiliary" equation="SIN((0.25 * b_Converter2 + 0.5 * b_Source2))" lhs="b_Source2"/>
+      <variables xmi:type="Variable" xmi:id="c_Converter1" uuid="c_Converter1" name="c_Converter1" type="auxiliary" equation="(0.5 * a_Converter1 + 0.25 * a_Converter2 + 1.0 * a_Source1 + 1.0 * a_Source2) + (0.5 * b_Converter1 + 0.25 * b_Converter2 + 1.0 * b_Source1 + 0.5 * b_Sink1)" lhs="c_Converter1"/>
+      <variables xmi:type="Variable" xmi:id="c_Converter2" uuid="c_Converter2" name="c_Converter2" type="auxiliary" equation="4.5" lhs="c_Converter2"/>
+      <variables xmi:type="Variable" xmi:id="c_Sink1" uuid="c_Sink1" name="c_Sink1" type="auxiliary" equation="(0.25 * a_Converter2) + (0.5 * c_Source1 + 0.25 * c_Source2 + 0.5 * c_Sink1)" lhs="c_Sink1"/>
+      <variables xmi:type="Stock" xmi:id="c_Source1" uuid="c_Source1" name="c_Source1" lhs="c_Source1" type="stock" comment="c_Source1" units="" equation="(0.25 * b_Converter2 + 0.5 * b_Sink1) + (0.5 * c_Converter2 + 0.25 * c_Source2)" initialValue="39.8"/>
+      <variables xmi:type="Variable" xmi:id="c_Source2" uuid="c_Source2" name="c_Source2" type="auxiliary" equation="(0.5 * c_Converter2 + 0.25 * c_Source2)" lhs="c_Source2"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Converter2 to b_Converter1" from="b_Converter1" to="a_Converter2"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Sink1 to a_Converter2" from="a_Converter2" to="c_Sink1"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Converter1 to a_Converter2" from="a_Converter2" to="a_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="b_Sink1 to c_Sink1" from="c_Sink1" to="b_Sink1"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Converter1 to b_Sink1" from="b_Sink1" to="a_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Source1 to c_Converter2" from="c_Converter2" to="c_Source1"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Source1 to b_Sink1" from="b_Sink1" to="c_Source1"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Converter1 to b_Source1" from="b_Source1" to="c_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Sink1 to b_Converter2" from="b_Converter2" to="a_Sink1"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Converter1 to a_Source1" from="a_Source1" to="c_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Converter1 to a_Source2" from="a_Source2" to="c_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Converter1 to b_Converter2" from="b_Converter2" to="a_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Converter1 to b_Converter1" from="b_Converter1" to="a_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="b_Source1 to c_Converter2" from="c_Converter2" to="b_Source1"/>
+      <links xmi:type="InfluenceLink" xmi:id="b_Converter2 to a_Converter1" from="a_Converter1" to="b_Converter2"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Sink1 to c_Source1" from="c_Source1" to="c_Sink1"/>
+      <variables xmi:type="Rate" xmi:id="c_Source1 to b_Converter2" uuid="c_Source1 to b_Converter2" name="c_Source1 to b_Converter2" equation="c_Source1" type="rate" lhs="c_Source1" comment="" units="" from="b_Converter2" to="c_Source1"/>
+      <links xmi:type="InfluenceLink" xmi:id="b_Converter2 to b_Source2" from="b_Source2" to="b_Converter2"/>
+      <links xmi:type="InfluenceLink" xmi:id="b_Source1 to c_Source2" from="c_Source2" to="b_Source1"/>
+      <links xmi:type="InfluenceLink" xmi:id="b_Sink1 to b_Converter2" from="b_Converter2" to="b_Sink1"/>
+      <links xmi:type="InfluenceLink" xmi:id="b_Sink1 to c_Source1" from="c_Source1" to="b_Sink1"/>
+      <links xmi:type="InfluenceLink" xmi:id="b_Sink1 to c_Source2" from="c_Source2" to="b_Sink1"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Source2 to c_Converter2" from="c_Converter2" to="c_Source2"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Sink1 to a_Converter2" from="a_Converter2" to="a_Sink1"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Sink1 to c_Source2" from="c_Source2" to="c_Sink1"/>
+      <links xmi:type="InfluenceLink" xmi:id="b_Source2 to b_Converter2" from="b_Converter2" to="b_Source2"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Converter1 to b_Sink1" from="b_Sink1" to="c_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Converter1 to a_Converter1" from="a_Converter1" to="c_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Converter1 to a_Converter2" from="a_Converter2" to="c_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="b_Converter2 to a_Sink1" from="a_Sink1" to="b_Converter2"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Converter2 to b_Source2" from="b_Source2" to="a_Converter2"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Converter1 to b_Source1" from="b_Source1" to="a_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="b_Sink1 to a_Converter2" from="a_Converter2" to="b_Sink1"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Converter2 to a_Converter1" from="a_Converter1" to="a_Converter2"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Converter1 to a_Source1" from="a_Source1" to="a_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="b_Converter2 to b_Converter1" from="b_Converter1" to="b_Converter2"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Converter1 to a_Source2" from="a_Source2" to="a_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Sink1 to c_Source2" from="c_Source2" to="a_Sink1"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Source1 to c_Source2" from="c_Source2" to="c_Source1"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Converter1 to b_Converter2" from="b_Converter2" to="c_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Converter2 to a_Sink1" from="a_Sink1" to="a_Converter2"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Sink1 to c_Source1" from="c_Source1" to="a_Sink1"/>
+      <links xmi:type="InfluenceLink" xmi:id="c_Converter1 to b_Converter1" from="b_Converter1" to="c_Converter1"/>
+      <links xmi:type="InfluenceLink" xmi:id="a_Sink1 to c_Sink1" from="c_Sink1" to="a_Sink1"/>
+  </SystemModel>
+  <notation:Diagram xmi:id="_A__0" type="Systemdynamics" element="__VZtwGkfEeSjsq7j1gAbXg" name="MatrixFormulationRSD" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="0" type="2004" element="a_Converter1" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="1" type="5003"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="2" x="554" y="590"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="3" type="2003" element="a_Converter2" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="4" type="5002"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="5" x="37" y="316"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="6" type="2004" element="a_Sink1" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="7" type="5003"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="8" x="51" y="249"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="9" type="2004" element="a_Source1" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="10" type="5003"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="11" x="498" y="628"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="12" type="2004" element="a_Source2" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="13" type="5003"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="14" x="434" y="654"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="15" type="2004" element="b_Converter1" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="16" type="5003"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="17" x="121" y="567"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="18" type="2003" element="b_Converter2" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="19" type="5002"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="20" x="173" y="611"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="21" type="2004" element="b_Sink1" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="22" type="5003"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="23" x="601" y="541"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="24" type="2004" element="b_Source1" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="25" type="5003"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="26" x="233" y="643"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="27" type="2004" element="b_Source2" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="28" type="5003"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="29" x="299" y="661"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="30" type="2004" element="c_Converter1" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="31" type="5003"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="32" x="121" y="133"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="33" type="2004" element="c_Converter2" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="34" type="5003"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="35" x="173" y="89"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="36" type="2004" element="c_Sink1" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="37" type="5003"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="38" x="299" y="39"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="39" type="2003" element="c_Source1" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="40" type="5002"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="41" x="636" y="482"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="42" type="2004" element="c_Source2" fontName="Lucida Grande" fontHeight="12">
+      <children xmi:type="notation:DecorationNode" xmi:id="43" type="5003"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="44" x="658" y="418"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="45"/>
+    <edges xmi:type="notation:Edge" xmi:id="46" type="4004" element="a_Converter2 to b_Converter1" source="15" target="3">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="47" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="48" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="49" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="50" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="51" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="52" type="4004" element="c_Sink1 to a_Converter2" source="3" target="36">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="53" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="54" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="55" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="56" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="57" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="58" type="4004" element="a_Converter1 to a_Converter2" source="3" target="0">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="59" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="60" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="61" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="62" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="63" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="64" type="4004" element="b_Sink1 to c_Sink1" source="36" target="21">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="65" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="66" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="67" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="68" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="69" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="70" type="4004" element="a_Converter1 to b_Sink1" source="21" target="0">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="71" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="72" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="73" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="74" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="75" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="76" type="4004" element="c_Source1 to c_Converter2" source="33" target="39">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="77" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="78" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="79" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="80" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="81" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="82" type="4004" element="c_Source1 to b_Sink1" source="21" target="39">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="83" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="84" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="85" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="86" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="87" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="88" type="4004" element="c_Converter1 to b_Source1" source="24" target="30">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="89" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="90" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="91" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="92" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="93" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="94" type="4004" element="a_Sink1 to b_Converter2" source="18" target="6">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="95" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="96" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="97" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="98" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="99" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="100" type="4004" element="c_Converter1 to a_Source1" source="9" target="30">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="101" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="102" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="103" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="104" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="105" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="106" type="4004" element="c_Converter1 to a_Source2" source="12" target="30">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="107" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="108" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="109" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="110" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="111" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="112" type="4004" element="a_Converter1 to b_Converter2" source="18" target="0">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="113" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="114" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="115" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="116" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="117" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="118" type="4004" element="a_Converter1 to b_Converter1" source="15" target="0">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="119" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="120" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="121" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="122" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="123" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="124" type="4004" element="b_Source1 to c_Converter2" source="33" target="24">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="125" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="126" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="127" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="128" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="129" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="130" type="4004" element="b_Converter2 to a_Converter1" source="0" target="18">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="131" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="132" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="133" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="134" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="135" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="136" type="4004" element="c_Sink1 to c_Source1" source="39" target="36">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="137" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="138" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="139" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="140" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="141" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="142" type="4003" element="c_Source1 to b_Converter2" source="18" target="39">
+      <children xmi:type="notation:DecorationNode" xmi:id="143" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="144" x="12" y="12"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="145"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="146" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="147" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="148" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="149" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="150" type="4004" element="b_Converter2 to b_Source2" source="27" target="18">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="151" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="152" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="153" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="154" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="155" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="156" type="4004" element="b_Source1 to c_Source2" source="42" target="24">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="157" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="158" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="159" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="160" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="161" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="162" type="4004" element="b_Sink1 to b_Converter2" source="18" target="21">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="163" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="164" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="165" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="166" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="167" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="168" type="4004" element="b_Sink1 to c_Source1" source="39" target="21">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="169" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="170" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="171" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="172" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="173" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="174" type="4004" element="b_Sink1 to c_Source2" source="42" target="21">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="175" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="176" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="177" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="178" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="179" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="180" type="4004" element="c_Source2 to c_Converter2" source="33" target="42">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="181" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="182" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="183" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="184" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="185" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="186" type="4004" element="a_Sink1 to a_Converter2" source="3" target="6">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="187" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="188" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="189" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="190" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="191" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="192" type="4004" element="c_Sink1 to c_Source2" source="42" target="36">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="193" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="194" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="195" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="196" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="197" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="198" type="4004" element="b_Source2 to b_Converter2" source="18" target="27">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="199" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="200" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="201" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="202" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="203" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="204" type="4004" element="c_Converter1 to b_Sink1" source="21" target="30">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="205" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="206" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="207" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="208" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="209" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="210" type="4004" element="c_Converter1 to a_Converter1" source="0" target="30">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="211" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="212" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="213" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="214" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="215" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="216" type="4004" element="c_Converter1 to a_Converter2" source="3" target="30">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="217" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="218" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="219" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="220" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="221" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="222" type="4004" element="b_Converter2 to a_Sink1" source="6" target="18">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="223" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="224" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="225" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="226" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="227" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="228" type="4004" element="a_Converter2 to b_Source2" source="27" target="3">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="229" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="230" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="231" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="232" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="233" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="234" type="4004" element="a_Converter1 to b_Source1" source="24" target="0">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="235" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="236" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="237" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="238" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="239" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="240" type="4004" element="b_Sink1 to a_Converter2" source="3" target="21">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="241" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="242" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="243" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="244" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="245" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="246" type="4004" element="a_Converter2 to a_Converter1" source="0" target="3">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="247" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="248" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="249" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="250" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="251" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="252" type="4004" element="a_Converter1 to a_Source1" source="9" target="0">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="253" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="254" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="255" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="256" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="257" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="258" type="4004" element="b_Converter2 to b_Converter1" source="15" target="18">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="259" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="260" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="261" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="262" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="263" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="264" type="4004" element="a_Converter1 to a_Source2" source="12" target="0">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="265" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="266" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="267" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="268" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="269" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="270" type="4004" element="a_Sink1 to c_Source2" source="42" target="6">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="271" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="272" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="273" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="274" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="275" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="276" type="4004" element="c_Source1 to c_Source2" source="42" target="39">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="277" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="278" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="279" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="280" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="281" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="282" type="4004" element="c_Converter1 to b_Converter2" source="18" target="30">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="283" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="284" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="285" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="286" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="287" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="288" type="4004" element="a_Converter2 to a_Sink1" source="6" target="3">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="289" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="290" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="291" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="292" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="293" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="294" type="4004" element="a_Sink1 to c_Source1" source="39" target="6">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="295" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="296" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="297" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="298" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="299" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="300" type="4004" element="c_Converter1 to b_Converter1" source="15" target="30">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="301" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="302" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="303" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="304" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="305" id="(0.5,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="306" type="4004" element="a_Sink1 to c_Sink1" source="36" target="6">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="307" smoothness="Normal"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="308" fontName="Lucida Grande" fontHeight="12"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="309" points="[0, 0, 0, -75]$[0, 75, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="310" id="(0.5,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="311" id="(0.5,0.0)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
